@@ -1,0 +1,71 @@
+﻿/*
+    INTERNET BANKING PROJECT
+
+    Bank name           : TRUE Bank
+    Date Created        :  2013
+    Created By          : Lee Rui Peng
+
+    Filename            : contactus.css
+    Supporting files    : ContactUs.htm
+*/
+/* Table Styles */
+.contacttitle
+{
+    font-size: 30px;
+    font-family: Arial Black;
+    color: White;
+    background-color: #FF4C00;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#hotlines
+{
+    width: 600px;
+    margin-top: 65px;
+    background-color: White;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 20px;
+    border-color: #B00101;
+    font-family: Arial;
+}
+
+#operatinghours
+{
+    float: right;
+    width: 375px;
+    font-family: Arial;
+    margin-top: -360px;
+    background-color: White;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 20px;
+    border-color: #B00101;
+}
+    
+#locations
+{
+    font-family: Arial;
+    background-color: white;
+    margin-top: 25px;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 20px;
+    border-color: #B00101;
+    width: 1000px;
+}
+
+#H, #AMK
+{
+    margin-left: 100px;
+}
+
+#O
+{
+    margin-left: 120px;
+}
+
+#JW
+{
+    margin-left: 140px;
+}

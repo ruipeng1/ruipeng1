@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 
+    INTERNET BANKING PROJECT
+
+    Bank name           : TRUE Bank
+    Date Created        :  2013
+    Created By          : Er Jacelyn
+
+    Filename            : TDebitCard.htm
+    Fileincluded        : 
+    Supporting files    : layout.css, TDebitCard.css, ddmJS.js
+-->
+
+<head>
+    <title>TRUE Bank</title> 
+    <link href ="css/layout.css" rel ="Stylesheet" type="text/css"/>
+    <link href="css/Cards/TDebitCard.css" rel="Stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="../Image/Home/truelogo.png" />
+    <script src="script/ddmJS.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.tab-section').hide();
+            $('#tabs a').bind('click', function (e) {
+                $('#tabs a.current').removeClass('current');
+                $('.tab-section:visible').hide();
+                $(this.hash).show();
+                $(this).addClass('current');
+                e.preventDefault();
+            }).filter(':first').click();
+        });
+    </script>
+    <style type="text/css">
+    hr
+        {
+            width: 635px;
+            margin-left: 20px;
+            border: 0;
+            height: 1px;
+            background: #333;
+            background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+            background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc);
+            background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc); 
+            background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);  
+        }
+    </style>
+   
+</head>
+
+<body>
+<header id="top">
+<a href="../Home.htm"><img src ="image/TRUEBankBanner.png" alt= "TRUE Bank" width="1000px" height="150px"/></a>
+<br />
+<br />
+<!-------------------------------Start of the top navigation--------------------------------->
+<nav>
+    <ul id="topnav">
+<!-- navhome -->
+        <li>
+            <a href="../Home.htm">Home<img src="Image/homeicon.png" alt="homeimg" width="30px" height="30px"/></a>
+        </li>
+<!-- navloans -->
+        <li>
+            <a href="../Loans/Loan.htm">TLoans<img src="Image/Loanicon.png" alt="loanimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="../Loans/Overview.htm">Travelling loans</a></li>
+                    <li><a href="#">Education loans</a></li>
+                    <li><a href="#">Car loans</a></li>
+                    <li><a href="#">Property loans</a></li>
+
+                </ul>
+        </li>
+<!-- navdeposit -->
+        <li>
+            <a href="../Deposit/overall.htm">TDeposit<img src="Image/depositicon.png" alt="depositimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="../Deposit/overview.htm">Fixed Deposit</a></li>
+                    <li><a href="#">Saving Account</a></li>
+                    <li><a href="#">Current Account</a></li>
+                </ul>
+        </li>
+<!-- navcards -->
+        <li>
+            <a href="TCard.htm">TCards<img src="Image/cardicon.png" alt="cardimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="TDebitCard.htm">Debit Card</a></li>
+                    <li><a href="">Credit Cards</a></li>
+                </ul>
+        </li>
+<!-- navpayment -->
+        <li>
+            <a href="../Payment/Tpayment.htm">TPayment<img src="Image/paymenticon.png" alt="paymentimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="../Payment/overview.htm">Fund Transfer</a></li>
+                    <li><a href="#">Bill Payment</a></li>
+                    <li><a href="#">Credit Payment</a></li>
+                </ul>
+        </li>
+    </ul>
+</nav>
+<!-------------------------------End of the top navigation----------------------------------->
+ </header>
+<br />
+<br />
+<br />
+<!-------------------------------Start of the side navigation----------------------------------->
+<nav id="sidenav">
+    <ul>
+        <li>
+            <a href="TDebitCard.htm">Debit Card</a>
+        </li>
+        <br />
+        <li>
+            <a href="AppForms.htm">Form</a>
+        </li>
+        <br />
+        <li>
+            <a href="FAQ.htm">FAQ</a>
+        </li>
+       
+
+    </ul>
+</nav>
+<br />
+<br />
+        <a href="../ContactUs.htm"><img src="Image/Hotlines.png" width="185px" height="250px" alt="Hotlines" id="hotlines"/></a>
+<!-------------------------------End of the side navigation----------------------------------->
+
+<section>
+<article>
+<h1>TRUE Debit PayPass Mastercard</h1>
+<h3 id="center">Mobile Debit Card "Tap & Go"</h3>
+<img src="image/Cards/TCard.png" id="card" alt="image"/>
+<br /><br />
+<article id="tab">
+<ul id="tabs">
+    <li><a href="#eligible">Eligibility</a></li>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#benefits">Benefits</a></li>
+    <li><a href="#promotion">Promotions</a></li>
+</ul>
+ 
+<div id="eligible" class="tab-section">
+    <p>
+    <table class="eligible" border="1">
+        <tr>
+            <th>Eligibility</th>
+            <th>Fees and charges</th>
+        </tr>
+        <tr>
+            <td>
+                <p>Age 16 and above</p>
+                <p>No minimum income</p>
+                <p>TRUE deposit a/c holder</p>
+            </td>
+            <td>
+                <p>No annual fee</p> 
+            </td>
+        </tr>
+    </table>
+    </p>
+</div>
+<div id="overview" class="tab-section">
+    <h2>Overview</h2>
+    <p>TRUE Debit PayPass Mastercard is a debit card that allow customers 
+       to perform payment via their NFC supported mobile handset. This 
+       debit card is a contactless payment method that gives our customers 
+       the convenience of making payment without handing over their payment 
+       card. Before you are able to use this mobile debit card, you must first
+       download the smart wallet app from your mobile play store.
+   </p>
+</div>
+<div id="features" class="tab-section">
+    <h2>Features</h2>
+    <p>
+    <nav>
+        <ul>
+            <li>Debit Card on mobile phone</li>
+            <li>Payment via your NFC supported mobile phone</li>
+            <li>Contactless payment method</li>
+            <li>Change your spending limit easily</li>
+            <li>Redeem mobile coupons on the go</li>
+        </ul>
+    </nav>
+    </p>
+</div>
+<div id="benefits" class="tab-section">
+    <h2>Benefits</h2>
+    <p>
+    <nav>
+        <ul>
+        <li>Enjoy hassle-free "Tap & Go" payment method</li>
+        <li>No more plastic, paper or wallet clutter</li>
+        <li>Enhanced Security</li>
+        <ul>
+        <li>Lock your Smart Wallet Application with 6-digits pin number</li>
+        <li>Each transaction made will be recorded in your Smart Wallet App</li>
+        </ul>
+        </ul>
+    </nav>
+    </p>
+</div>
+<div id="promotion" class="tab-section">
+    <h2>Promotions</h2>
+    <p>Looking for new and exclusive deals on the TRUE Debit PayPass Mastercard? You've come to the right place.</p>
+<hr>
+<br />
+    <img src="image/Cards/voucher.png" alt="image" />
+    <p id="voucher">Get a S$10 The Choice Voucher* for use at Giant, Cold Storage, Jason’s, Market Place, Guardian Pharmacy and 7-Eleven when you apply for a TRUE Debit PayPass Mastercard today.</p>
+    <h3>How it works:</h3>
+    <p>
+    <ol>
+    <li>Apply for TRUE Debit PayPass Mastercard.</li>
+    <li>Activate your card and charge a minimum of S$200 within 30 days from date of card approval.</li>
+    <li>Receive a S$10 The Choice Voucher</li>
+    </ol>
+    </p>
+</div>
+</article>
+
+<p class="apply">Click <a href="AppForms.htm">here</a> to apply for TRUE Debit PayPass Mastercard!</p>
+
+</article>
+
+
+<!-------------------------------Start of the bottom navigation------------------------------->
+<nav id="bottomnav">
+    <ul>
+        <li>
+            <a href="TDebitCard.htm">Debit Card &#8226;</a>
+        </li>
+        <li>
+            <a href="AppForms.htm">Form &#8226;</a>
+        </li>
+        <li>
+            <a href="FAQ.htm">FAQ</a>
+        </li>
+       
+
+    </ul>
+</nav>
+<!---------------------------------End of the bottom navigation------------------------------->
+</section>
+
+<aside>
+
+        
+</aside>
+<br />
+<footer>
+
+<div id="sitelink">
+        <div id="Returntop"><a href="#top">Return to Top &#8657;</a></div>
+</div>
+
+<address>
+        &copy; Copyright 2013 TRUEBank Ltd | All Rights Reserved | Co. Reg. No.19420106W | 
+        <a href="#">Contact Us</a> 
+        <br />
+                <a href="http://www.facebook.com" target="new"><img src="Image/facebook.png" alt="facebook"/></a>
+                <a href="http://www.twitter.com" target="new"><img src="Image/Twitter.png" alt="twitter" /></a>
+                <a href="http://www.youtube.com" target="new"><img src="Image/youtube.png" alt="youtube" /></a>
+                <a href="http://www.newsfeeds.com" target="new"><img src="Image/newsfeeds.png" alt="newsfeed" /></a>
+</address>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+﻿body {    
+}
+
+h1 
+{
+    font-size: 1.8em;
+    background: #FF9640;
+    color: #D00000;
+    text-align: center;
+}
+    
+h2, h3 
+{
+    color: #D00000;
+}
+    
+p 
+{
+    font-family: Arial;
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+
+p.apply 
+{
+    font-size: 1.2em;
+    color: #D00000;
+}
+
+p a 
+{
+    text-transform: uppercase;
+    color: #FF4C00;
+}
+    
+h1, h2, h3
+{
+    font-family: Arial Black;
+    text-indent: 20px;
+}
+    
+/* Section styles */ 
+section 
+{
+    text-align: left;
+    margin-top: -450px;
+    margin-left: 220px;
+    width: 760px;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: #B00101;
+}    
+/* Article styles */
+article li
+{
+    font-size: 1.1em;
+    font-family: Arial;
+}
+
+article#tab
+{
+    margin-left: 30px;
+}
+
+/* Table style */
+table.eligible 
+{
+    border: 2px solid #B00101;
+    border-collapse: collapse;
+    font-family: Arial;
+    font-size: 0.95em;
+    width: 650px;
+    margin-left: 15px;
+}
+    
+th 
+{
+    text-align: center;
+    background: #FF4C00;
+    color: white;
+    font-size: 1.4em;
+}
+
+td 
+{
+    background: #FF9640;
+}
+    
+table p
+{
+    text-indent: 10px;
+}
+
+#bottomnav
+{
+    text-align: center;
+}
+
+img#card
+{
+    margin-left: 100px;
+}
+
+h3#center
+{
+    text-align: center;
+}
+
+/* Tab Styles */
+#tabs {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    zoom: 1;
+    position:relative;
+    top:2px;
+    z-index: 1;
+}
+ 
+#tabs li {
+    display: block;
+    list-style: none;
+    margin: 0;
+    margin-right: 1px;
+    padding: 0;
+    float: left;
+}
+ 
+#tabs li a {
+    display: block;
+    padding: 2px 10px;
+    border: 2px solid #B00101;
+    border-bottom: 0 none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+ 
+.tab-section {
+    padding: 10px;
+    border: 2px solid #B00101;
+    border-radius: 5px;
+    width:680px;
+}
+ 
+#tabs li a.current {
+    background: #FF9640;
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid #FF9640;
+}
+
+#tabs li a
+{
+    color: rgba(255, 255, 255, 0.8);
+    background-color:#B00101;
+}
+
+p#voucher
+{
+    float: right;
+    margin-top: -90px;
+    margin-left: 210px;
+}

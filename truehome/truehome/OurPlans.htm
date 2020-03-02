@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+<!--
+IF NOT NICE JUST TEXT ME
+Colours
+#FF0000 (no other colours, you can use this)
+#D00000 (Titles, like h1 h2 etcs.)
+black, white
+dark orange#FF4C00, light orange#FF9640(anything regarding background)
+
+Fontfamily
+Arial-Black(header, Titles)
+Arial(content)
+
+border-style: solid;
+border-radius: 20px;
+border-width: 10px;
+border-color: #B00101; (for borders)
+
+&nbsp; = space
+</br> = break line
+
+HOTLINES & EMAIL
+Loans : 1800 121 1234
+        (65) 61211234 from overseas
+        loanstruebank@mymail.com
+Deposits: 1800 122 2345
+          (65) 61222345 from overseas
+          depositstruebank@mymail.com
+Cards: 1800 123 3456
+       (65) 61233456 from overseas
+       cardstruebank@mymail.com
+Payments: 1800 124 4567
+          (65) 61244567 from overseas
+          paymentstruebank@mymail.com
+
+need any java just give me a text.
+HERE IS THE CHANGE IMAGE JAVA
+
+    <script type="text/javascript">
+        function showIt() {
+
+            document.getElementById("haha").src = "Image/twitter.png";
+
+        }
+
+        function hideIt() {
+
+            document.getElementById("haha").src = "Image/facebook.png";
+
+        }
+
+    
+    </script>
+
+
+</head>
+<body>
+<img src="Image/facebook.png" id="haha" onmouseover="showIt();" onmouseout="hideIt();" />
+</body>
+</html>
+
+HERE IS THE ROTATING BANNER WITHOUT LINKingS AND BUttONS FOR YOUR OWN HOME
+1.change the "ad" to for example loanImages, thisLoan, loanBanner
+2.in the Array, change to your banners, i got 4 so i put 4 banners.
+3.Change your first banner in the body, width and height.
+
+
+<script type="text/javascript">
+    adImages = new Array("image/Travelling loan/Slide1.png", "image/Travelling loan/Slide2.png", "image/Travelling loan/Slide3.png", "image/Travelling loan/Slide4.png")
+    thisAd = 0
+    imgCt = adImages.length
+    function rotate() {
+        if (document.images) {
+            thisAd++
+            if (thisAd == imgCt) {
+                thisAd = 0
+            }
+            document.adBanner.src = adImages[thisAd]
+            setTimeout("rotate()", 3 * 1000)
+        }
+    }
+
+</script>
+<body onload="rotate()">
+    <img src="image/Travelling loan/Slide1.png" width="1000px" height="250px" name="adBanner" alt="Ad Banner" />
+</body>
+
+HERE IS THE COLLAPSE AND EXPAND JAVASCRIPT
+<script type="text/javascript">
+
+    function showHide(elementid) {
+        if (document.getElementById(elementid).style.display == 'none') {
+            document.getElementById(elementid).style.display = '';
+        }
+        else {
+            document.getElementById(elementid).style.display = 'none';
+        }
+    }
+</script>
+
+<div><a href="javascript:showHide('div_1035677');">CONTENT
+</a></div>
+
+<div id="div_1035677" style="display:none;">
+       CONTENT
+</div>
+
+HERE IS THE CALCULTOR FOR JAVASCRIPT
+<script type="text/javascript">
+    function showpay() 
+    {
+        if ((document.calc.loan.value == null || document.calc.loan.value.length == 0) ||
+            (document.calc.months.value == null || document.calc.months.value.length == 0) ||
+            (document.calc.rate.value == null || document.calc.rate.value.length == 0)) 
+        {
+            document.calc.pay.value = "Incomplete";
+        }
+        else 
+        {
+            var princ = document.calc.loan.value;
+            var term = document.calc.months.value;
+            var intr = document.calc.rate.value / 100;
+            document.calc.pay.value = ((parseFloat(princ) * parseFloat(intr)) + parseFloat(princ)) / parseFloat(term);
+        }
+
+        // payment = principle * monthly interest/(1 - (1/(1+MonthlyInterest)*Months))
+
+    }
+</script>
+<p id="calTitle">
+    This is being provided for you to plan your next loan application.
+    <br />
+    To use, enter values for the Loan Amount, Number of Months for Loan,
+    <br />
+     and the Interest Rate (e.g.7.25), and click the Calculate button. 
+     <br />
+     Clicking the Reset button will clear entered values.
+</p>
+
+<center>
+<form name=calc method=POST>
+<table border="2" width="500px">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Data Entry</th>
+                </tr>
+            </thead>
+
+            <tfoot>
+                <tr>
+                    <td><input type=button onClick='showpay()' value=Calculate></td>
+                    <td><input type=reset value=Reset></td>
+                </tr>
+            </tfoot>
+
+            <tbody>
+                <tr>
+                    <td>Loan Amount</td>
+                    <td><input type=text name=loan placeholder="Enter Amount"></td>
+                </tr>
+                <tr>
+                    <td>Loan Length in Months</td>
+                    <td><input type=text name=months placeholder="Enter Months"></td>
+                </tr>
+                <tr>
+                    <td>Interest Rate</td>
+                    <td><input type=text name=rate placeholder="Enter Interest"></td>
+                </tr>
+                <tr>
+                    <td>Monthly Payment</td>
+                    <td>Calculated<input type=text name=pay disabled=disabled></td>
+                </tr>
+            </tbody>
+</table>
+
+</form>
+<font size=1>Enter only numeric values (no commas), using decimal points
+where needed.<br>
+Non-numeric values will cause errors.</font>
+</center>

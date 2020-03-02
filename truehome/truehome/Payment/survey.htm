@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 
+    INTERNET BANKING PROJECT
+
+    Bank name           : TRUE Bank
+    Date Created        :  2013
+    Created By          : wanghan
+
+    Filename            : survey.htm
+    Fileincluded        : 
+    Supporting files    : layout.css, survey.css, ddmJS.js
+-->
+<head>
+    <title>TRUE Bank</title> 
+    <link href ="css/layout.css" rel ="Stylesheet" type="text/css"/>
+    <link href ="css/survey.css" rel="Stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Font+Name">
+    <link rel="shortcut icon" href="../Image/Home/truelogo.png" />
+    <script src="script/ddmJS.js" type="text/javascript"></script>
+	<script src="script/search.js" type="text/javascript"></script>
+
+</head>
+<body>
+<header id="top">
+<a href="../Home.htm"><img src ="image/TRUEBankBanner.png" alt= "TRUE Bank" width="1000px" height="150px"/></a>
+<br /><br />
+<!-------------------------------Start of the top navigation--------------------------------->
+<nav>
+    <ul id="topnav">
+<!-- navhome -->
+        <li>
+            <a href="../Home.htm">Home<img src="Image/homeicon.png" alt="homeimg" width="30px" height="30px"/></a>
+        </li>
+<!-- navloans -->
+        <li>
+            <a href="../Loans/Loan.htm">TLoans<img src="Image/Loanicon.png" alt="loanimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="../Loans/Overview.htm">Travelling loans</a></li>
+                    <li><a href="#">Education loans</a></li>
+                    <li><a href="#">Car loans</a></li>
+                    <li><a href="#">Property loans</a></li>
+                </ul>
+        </li>
+<!-- navdeposit -->
+        <li>
+            <a href="../Deposit/overall.htm">TDeposit<img src="Image/depositicon.png" alt="depositimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="../Deposit/overview.htm">Fixed Deposit</a></li>
+                    <li><a href="#">Saving Account</a></li>
+                    <li><a href="#">Current Account</a></li>
+                </ul>
+        </li>
+<!-- navcards -->
+        <li>
+            <a href="../Cards/TCard.htm">TCards<img src="Image/cardicon.png" alt="cardimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="../Cards/TDebitCard.htm">Debit Cards</a></li>
+                    <li><a href="#">Credit Cards</a></li>
+                </ul>
+        </li>
+<!-- navpayment -->
+        <li>
+            <a href="Tpayment.htm">TPayment<img src="Image/paymenticon.png" alt="paymentimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="overview.htm">Fund Transfer</a></li>
+		            <li><a href="#">Bill Payment</a></li>
+                    <li><a href="#">Credit Payment</a></li>
+                </ul>
+        </li>
+    </ul>
+</nav>
+<!-------------------------------End of the top navigation----------------------------------->
+
+
+
+<!-------------------------------Start of the side navigation----------------------------------->
+<nav id="sidenav">
+    <ul>
+        <li>
+            <a href="overview.htm">Overview</a>
+        </li>
+        <br />
+        <li>
+            <a href="giro.htm">GIRO</a>
+        </li>
+        <br />
+        <li>
+            <a href="fixdeposit.htm">Fixed Deposit</a>
+        </li>
+        <br />
+        <li>
+            <a href="messagewarning.htm">Message Warning</a>
+        </li>
+        <br />
+        <li>
+            <a href="flashtransfer.htm">Flash Transfer</a>
+        </li>
+        <br />
+         <li>
+            <a href="survey.htm"">Survey</a>
+        </li>
+
+    </ul>
+</nav>
+<br />
+<br />
+        <a href="../ContactUs.htm"><img src="Image/Hotlines.png" width="185px" height="250px" alt="Hotlines" id="hotlines"/></a>
+        
+        
+        
+        
+        
+</body>
+</html>
+<!-------------------------------End of the side navigation----------------------------------->
+
+<section>
+         
+        <h1>Survey</h1> 
+       <img src="image/payment/36020130624091335343.jpg"width="780px" height="250px" /> 
+       
+       <h3>The Customer Survey Form</h3>
+        <form id="survey" name="survey" action="overview.htm" method="post">
+
+           <fieldset id="custInfo">
+             
+
+              <label for ="custname">Name *</label>
+              <input name="custname" id="custname"
+              placeholder="first and last name"
+                   required="requires" />
+
+              <label for="address">Address</label>
+              <input name="address" id="address" />
+
+              <label for="zip">Postal code</label>
+              <input name="zip" id="zip" 
+                   placeholder="nnnnn (-nnnn)"
+                   pattern="^\d{5}(\-\d{4})?$" />
+
+              <label for="phone">Phone number</label>
+              <input name="phone" id="phone" type="tel"
+                   placeholder="(nnn) nnn-nnnn"
+                   pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+
+              <label for="email">E-mail</label>
+              <input name="email" id="email" type="email"
+                   required="required" />
+
+              <label for="nationality">Nationality</label>
+              <input name="nationality" id="nationality" required="required" />
+
+              <label>Where did your children study?<br />(select all that apply)</label>
+              <select name="infoSrc" id="infoSrc" size="5" multiple="multiple">
+                  <option value="america">America</option>
+                  <option value="austrilia">Austrilia</option>
+                  <option value="japan">Japanese</option>
+                  <option value="europe">Europe</option>
+                  <option value="other">Others</option>
+              </select>
+
+              <label for="orderPerMonth">
+                 How many years did your children study overseas?
+              </label> 
+
+              <input name="timeStudy" id="timeStudy"
+                     type="number" value="1"
+                     min="0" max="10" step="1" />
+           
+              
+              <label for="ordertype">Family status</label>
+              <select name="marryType" id="marryType">
+               
+                 <option value="type2">Unmarried</option>
+                 <option value="type3" selected="selected">Married</option>
+                 <option value="type4">Devercied</option>
+              </select>
+               
+               
+               <label>How many times do you transfer money to your children per year?</label>
+               <label class="sliderLabel">0</label>
+               <input name="numOfTime" id="Range2" type="range" value="5"
+                      min="1" max="20" step="1" />
+               <label class="sliderLabel">20</label>
+               
+           
+               
+               <label>How many chilren do your family have?
+                      </label>
+               <label class="sliderLabel">0</label>
+               <input name="numOfChild" id="numOfChild" type="range" value="2"
+                      min="1" max="5" step="1" />
+               <label class="sliderLabel">10</label>
+              
+               <label for="comments">Do you have any advice for our service?</label>
+               <textarea name="comments" id="comments"></textarea>
+       
+        </fieldset>      
+         
+         <label id="newsletter">
+             <input type="checkbox" name="newscb" />
+             E-mail me your newsletter for great coupons and specials!
+         </label>    
+        
+
+        <p>
+            <input type="submit" value="Submit My Survey" />
+            <input type="reset" value="Cancel" />  
+        
+        </p>
+       
+       
+       
+       
+       
+       
+       
+   
+
+
+
+
+
+
+
+  </form>
+
+
+<!-------------------------------Start of the bottom navigation------------------------------->
+<nav id="bottomnav">
+    <ul>
+        <li>
+            <a href="overview.htm">Overview &#8226;</a>
+        </li>
+        <li>
+            <a href="giro.htm">GIRO &#8226;</a>
+        </li>
+        <li>
+            <a href="fixdeposit.htm">Fixed Deposit &#8226;</a>
+        </li>
+        <li>
+            <a href="messagewarning.htm">Message Warning &#8226;</a>
+        </li>
+        <li>
+            <a href="flashtransfer.htm">Flash Transfer &#8226;</a>
+        </li>
+        <li>
+            <a href="survey.htm"">Survey</a>
+        </li>
+    </ul>
+</nav>
+
+
+<!---------------------------------End of the bottom navigation------------------------------->
+
+</section>
+<br />
+<footer>
+
+<div id="sitelink">
+        <div id="Returntop"><a href="#top">Return to Top &#8657;</a></div>
+</div>
+
+<address>
+        &copy; Copyright 2013 TRUEBank Ltd | All Rights Reserved | Co. Reg. No.19420106W | 
+        <a href="../ContactUs.htm">Contact Us</a> 
+		<br>
+		<div id="links">
+                <a href="http://www.facebook.com" target="new"><img src="Image/facebook.png" alt="facebook" /></a>
+                <a href="http://www.twitter.com" target="new"><img src="Image/Twitter.png" alt="twitter" /></a>
+                <a href="http://www.youtube.com" target="new"><img src="Image/youtube.png" alt="youtube" /></a>
+                <a href="http://www.newsfeeds.com" target="new"><img src="Image/newsfeeds.png" alt="newsfeed" /></a>
+		</div>
+</address>
+
+</footer>
+
+</body>
+</html>

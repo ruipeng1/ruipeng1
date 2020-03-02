@@ -1,0 +1,119 @@
+﻿/* 
+    INTERNET BANKING PROJECT
+
+    Bank name           : TRUE Bank
+    Date Created        :  2013
+    Created By          : Lee Rui Peng
+
+    Filename            : appform.css
+    Supporting files    : Application_Forms.htm
+*/
+
+section
+{
+    margin-top: -564px;
+    margin-left: 200px;
+    font-family: Arial;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 20px;
+    border-color: #B00101;
+}
+/* Forms Styles */
+fieldset
+{
+    background-color: #FF9640;
+    border: 2px solid #B00101;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+legend 
+{
+    background-color: #D00000;
+    color: white;
+    padding: 3px;
+    font-size: 20px;
+    text-align: center;
+    text-indent: 5px;
+    width: 100%;
+}
+
+div.form
+{
+    margin-left: 100px;
+}
+
+#formtitle
+{
+    font-family: Arial Black;
+    font-size: 20px;
+    margin-left: 10px;
+    
+}
+
+#attachment
+{
+    text-align: center;
+}
+
+#submitNcancel
+{
+    text-align: center;
+}
+
+#submit, #cancel
+{
+    display: inline;
+    float: none;
+    height: 40px;
+    width:200px;
+    margin: 10px;
+    width: 100px;
+}
+
+/* Validation Styles */
+input:focus, textarea:focus
+{
+    background-color: #95EE6B;
+}
+textarea:focus:valid
+{
+    background-color: #95EE6B;
+}
+
+textarea:focus:invalid
+{
+    background-color: #FFC6C6;
+}
+
+input:focus:valid 
+{
+    background-color: #95EE6B;
+    background-image: url(../image/app_tick.png);
+    background-position: bottom right;
+	background-repeat: no-repeat;
+	-o-background-size: contain;
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;	
+}
+
+input:focus:invalid
+{
+    background-color: #FFC6C6;
+    background-image: url(../image/app_cross.png);
+    background-position: bottom right;
+	background-repeat: no-repeat;
+	-o-background-size: contain;
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+/* Footer Styles */
+
+#bottomnav
+{
+    text-align:center;
+}

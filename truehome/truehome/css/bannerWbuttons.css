@@ -1,0 +1,75 @@
+﻿/* Begin Slideshow */
+div.slideshow
+{
+    height: 0px;
+}
+
+li#image1.slide, li#image2.slide, li#image3.slide, li#image4.slide
+{
+    height: 0px;
+}
+   
+.slideshow a img 
+{
+    width: 1000px;
+    height: 200px;
+    border: none;
+    margin: 50px 0px 0px -40px;
+}
+
+.slideshow li.slide 
+{
+    list-style-type: none;
+}
+
+.slideshow .slides 
+{
+    height: 260px;
+}
+
+.slideshow .slides li.slide 
+{
+    visibility: hidden;
+    position: absolute;
+}
+
+.slideshow .buttons 
+{
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 240px;
+    margin-left: -30px;
+    z-index: 9999;
+}
+
+.slideshow .buttons li 
+{
+    display: inline;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/app_cross.png);
+    background-repeat: no-repeat;
+}
+
+.slideshow .buttons li a 
+{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Arial Black;
+}
+
+.slideshow ul.buttons li a:hover 
+{
+    text-decoration: none;
+    color: #FF0000;
+}
+
+.slideshow ul.buttons li.active a:hover,
+.slideshow ul.buttons li.active a 
+{
+    color: #FF4C00;
+}
+/* End Slideshow */

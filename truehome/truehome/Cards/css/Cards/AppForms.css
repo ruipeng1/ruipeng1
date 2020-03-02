@@ -1,0 +1,110 @@
+﻿body {
+}
+
+h1
+{
+    font-family: Arial Black;
+    color: #D00000;
+}
+
+
+
+/* Section styles */ 
+section 
+{
+    text-align: left;
+    margin-top: -445px;
+    margin-left: 220px;
+    width: 750px;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 20px;
+    border-color: #B00101;
+    padding: 3px;
+    font-family: Arial;
+}
+
+/* Form styles */
+fieldset
+{
+    background-color: #FF9640;
+    border: 2px solid #B00101;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+legend 
+{
+    background-color: #D00000;
+    color: white;
+    padding: 3px;
+    font-size: 20px;
+    text-align: center;
+    text-indent: 5px;
+    width: 100%;
+}
+
+div.appForm
+{
+    margin-left: 100px;
+}
+
+#bottomnav
+{
+    margin-left: 180px;
+}
+
+/* Validation styles */
+input#address:focus, select:focus textarea:focus
+{
+    background-color: rgb(220, 255, 220);
+}
+
+input#address:focus:valid {
+    background: rgb(220, 255, 220);
+    
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+input#address:focus:invalid {
+    background: rgb(255, 232, 233);
+    
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+
+
+input:focus, select:focus, textarea:focus {
+    background-color: rgb(220, 255, 220);
+}
+
+input:focus:valid {
+    background: rgb(220, 255, 220) url(image/Cards/go.png) bottom right no-repeat;
+    
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+input:focus:invalid {
+    background: rgb(255, 232, 233) url(image/Cards/stop.png) bottom right no-repeat;
+    
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+article#button
+{
+    text-align: center;
+}
+

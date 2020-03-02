@@ -1,0 +1,60 @@
+﻿/*
+    INTERNET BANKING PROJECT
+
+    Bank name           : TRUE Bank
+    Date Created        :  2013
+    Created By          : Lee Rui Peng
+    Filename            : overview.css
+    Supporting files    : Overview.htm
+*/
+
+/* Section Styles */
+section
+{
+    margin-top: -564px;
+    margin-left: 200px;
+    font-family: Arial;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 20px;
+    border-color: #B00101;
+    text-align: center;
+}
+
+#transport, #overviewtitle
+{
+    color: White;
+    background-color: #FF4C00;
+    font-size: 30px;
+    font-family: Arial Black;
+
+}
+
+#overview
+{
+    font-family: Arial;
+    font-size: 20px;
+    margin-left: -50px;
+}
+
+#overview a
+{
+    text-decoration: none;
+    color: #FF0000;
+}
+
+#overview a:hover
+{
+    color: #D00000;
+}
+/* Term & Condition Styles */
+#tnc
+{
+    font-family: Arial Black;
+    font-size: 12px;
+}
+#intnc
+{
+    font-family: Arial;
+    font-size: 11px;
+}

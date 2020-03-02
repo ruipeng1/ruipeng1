@@ -1,0 +1,74 @@
+﻿section 
+{
+    margin-top: -667px;
+    margin-left: 200px;
+    text-align: left;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #B00101;
+    padding: 1px;
+        
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+h1
+{
+    text-align: center;
+    background-color: #FF4C00;
+    color: White;
+    font-size: 25px;
+    font-family: Arial Black;
+
+}
+
+p.sub
+{
+    font-weight: bold;
+    font-size: 25px;
+    color: #D00000;
+    text-align: center;
+}
+
+p.new
+{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Arial;
+    text-align: center;
+}
+#Learn
+{
+    margin-left: 320px;
+
+}
+strong#text
+{
+    font-size: 20px;
+    font-family: Arial;
+}
+nav#bottomnav
+{
+    text-align:center;
+}
+#image1
+{
+    margin-left: 270px;
+}
+#image2
+{
+    margin-left: 270px;
+}
+#image3
+{
+    margin-left: 225px;
+}
+#image4
+{
+    margin-left: 205px;
+}
+#image5
+{
+    margin-left: 250px;
+}

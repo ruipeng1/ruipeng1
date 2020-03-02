@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" :>
+<!-- 
+    INTERNET BANKING PROJECT
+
+    Bank name           : TRUE Bank
+    Date Created        :  2013
+    Created By          : Lee Rui Peng
+
+    Filename            : Rates.htm
+    Fileincluded        : 
+    Supporting files    : layout.css, rates.css, ddmJS.js, Calculator.js
+-->
+
+<head>
+    <title>TRUE Bank</title> 
+    <link href ="../css/layout.css" rel ="Stylesheet" type="text/css"/>
+    <link href="css/rates.css" rel="Stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="../Image/Home/truelogo.png" />
+    <script src="script/ddmJS.js" type="text/javascript"></script>
+    <script src="script/Calculator.js" type="text/javascript"></script>
+
+</head>
+<body>
+<header id="top">
+<a href="../Home.htm"><img src ="image/TRUEBankBanner.png" alt= "TRUE Bank" width="1000px" height="150px"/></a>
+<br />
+<br />
+<!-------------------------------Start of the top navigation--------------------------------->
+<nav>
+    <ul id="topnav">
+<!-- navhome -->
+        <li>
+            <a href="../Home.htm">Home<img src="Image/homeicon.png" alt="homeimg" width="30px" height="30px"/></a>
+        </li>
+<!-- navloans -->
+        <li>
+            <a href="Loan.htm">TLoans<img src="Image/Loanicon.png" alt="loanimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="Overview.htm">Travelling loans</a></li>
+                    <li><a href="#">Education loans</a></li>
+                    <li><a href="#">Car loans</a></li>
+                    <li><a href="#">Property loans</a></li>
+                </ul>
+        </li>
+<!-- navdeposit -->
+        <li>
+            <a href="../Deposit/overall.htm">TDeposit<img src="Image/depositicon.png" alt="depositimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="../Deposit/overview.htm">Fixed Deposit</a></li>
+                    <li><a href="#">Saving Account</a></li>
+                    <li><a href="#">Current Account</a></li>
+                </ul>
+        </li>
+<!-- navcards -->
+        <li>
+            <a href="../Cards/TCard.htm">TCards<img src="Image/cardicon.png" alt="cardimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="../Cards/TDebitCard.htm">Debit Cards</a></li>
+                    <li><a href="#">Credit Cards</a></li>
+                </ul>
+        </li>
+<!-- navpayment -->
+        <li>
+            <a href="../Payment/Tpayment.htm">TPayment<img src="Image/paymenticon.png" alt="paymentimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="../Payment/overview.htm">Fund Transfer</a></li>
+                    <li><a href="#">Bill Payment</a></li>
+                    <li><a href="#">Credit Payment</a></li>
+                </ul>
+        </li>
+    </ul>
+</nav>
+<!-------------------------------End of the top navigation----------------------------------->
+ </header>
+<br />
+<br />
+<br />
+<!-------------------------------Start of the side navigation----------------------------------->
+<nav id="sidenav">
+    <ul>
+        <li>
+            <a href="Overview.htm">Overview</a>
+        </li>
+        <br />
+        <li>
+            <a href="Information.htm">Information</a>
+        </li>
+        <br />
+        <li>
+            <a href="Rates.htm">Interest Rates</a>
+        </li>
+        <br />
+        <li>
+            <a href="Application.htm">Application</a>
+        </li>
+        <br />
+        <li>
+            <a href="FAQ.htm">FAQ</a>
+        </li>
+    </ul>
+</nav>
+<br />
+<br />
+        <a href="../ContactUs.htm"><img src="Image/Hotlines.png" width="185px" height="250px" alt="Hotlines" id="hotlines"/></a>
+<!-------------------------------End of the side navigation----------------------------------->
+
+<section>
+<br />
+<div id="interestTitle">
+    Interest Rates
+</div>
+<h3 id="caption">
+        Interest rate will be charged according to the amount loan as 
+        follows:-
+</h3>
+
+ <table border="2" width="700px" height="250px">
+         <thead>
+             <tr>
+                <th>Amount loan ($S)</th>
+                <th>Interest Rates p.a.(%)</th>
+             </tr>
+         </thead>
+
+         <tfoot>
+            <tr>
+                <td colspan="2">
+                    Minimum loan amount of $500 and cap at $25,000.
+                </td>
+            </tr>
+         </tfoot>
+
+         <tbody>
+             <tr>
+                <td>500 - 2500</td>
+                <td>8</td>
+             </tr>
+
+             <tr>
+                <td>2501 - 5000</td>
+                <td>7.5</td>
+             </tr>
+
+             <tr>
+                <td>5001 - 10000</td>
+                <td>7</td>
+             </tr>
+             <tr>
+                <td>10001 - 15000</td>
+                <td>6.5</td>
+             </tr>
+             <tr>
+                <td>15001 - 20000</td>
+                <td>6</td>
+             </tr>
+             <tr>
+                <td>20001 - 25000</td>
+                <td>5.5</td>
+             </tr>
+         </tbody>
+</table>
+
+<p id="calTitle">
+    This is being provided for you to plan your next loan application.
+    <br />
+    To use, enter values for the Loan Amount and the Interest Rate (e.g.7.25),
+    <br />
+     and click the Calculate button. Clicking the Reset button will clear entered values.
+</p>
+
+<center>
+<form name=calc method=POST>
+<table border="2" width="500px">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Data Entry</th>
+                </tr>
+            </thead>
+
+            <tfoot>
+                <tr>
+                    <td><input type="button" onClick='showpay()' value="Calculate"></td>
+                    <td><input type="reset" value="Reset"></td>
+                </tr>
+            </tfoot>
+
+            <tbody>
+                <tr>
+                    <td>Loan Amount</td>
+                    <td><input type="text" name="loan" placeholder="Enter Amount" required="required"></td>
+                </tr>
+                <tr>
+                    <td>Interest Rate</td>
+                    <td>
+                        <select name="rate">
+                            <option value="selectall">Please select</option>
+                            <option value="5.5">5.5</option>
+                            <option value="6">6</option>
+                            <option value="6.5">6.5</option>
+                            <option value="7">7</option>
+                            <option value="7.5">7.5</option>
+                            <option value="8">8</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td>No. of months to repay
+                        <br />(max 12 months)
+                    </td>
+                    <td><input type="text" name="month" pattern="^\(?([0-1]{1})\)?([0-9]{1})$" placeholder="Enter 01 to 12" required="required"></td>
+                </tr>
+                <tr>
+                    <td>Monthly Payment</td>
+                    <td>Calculated<input type="text" name="pay" disabled=disabled></td>
+                </tr>
+            </tbody>
+</table>
+
+</form>
+<font size=1>Enter only numeric values (no commas), using decimal points
+where needed.<br>
+Non-numeric values will cause errors.</font>
+</center>
+<!-------------------------------Start of the bottom navigation------------------------------->
+<nav id="bottomnav">
+    <ul>
+        <li>
+            <a href="Overview.htm">Overview &#8226;</a>
+        </li>
+        <li>
+            <a href="Information.htm">Information &#8226;</a>
+        </li>
+        <li>
+            <a href="Rates.htm">Interest Rates &#8226;</a>
+        </li>
+        <li>
+            <a href="Application.htm">Application &#8226;</a>
+        </li>
+        <li>
+            <a href="FAQ.htm">FAQ</a>
+        </li>
+    </ul>
+</nav>
+<!---------------------------------End of the bottom navigation------------------------------->
+</section>
+<br />
+<footer>
+
+<div id="sitelink">
+        <div id="Returntop"><a href="#top">Return to Top &#8657;</a></div>
+</div>
+
+<address>
+        &copy; Copyright 2013 TRUEBank Ltd | All Rights Reserved | Co. Reg. No.19420106W | 
+        <a href="#">Contact Us</a>
+        <br />
+                <a href="http://www.facebook.com" target="new"><img src="Image/facebook.png" alt="facebook"/></a>
+                <a href="http://www.twitter.com" target="new"><img src="Image/Twitter.png" alt="twitter"/></a>
+                <a href="http://www.youtube.com" target="new"><img src="Image/youtube.png" alt="youtube" /></a>
+                <a href="http://www.newsfeeds.com" target="new"><img src="Image/newsfeeds.png" alt="newsfeed"/></a>
+</address>
+
+</footer>
+
+</body>
+</html>

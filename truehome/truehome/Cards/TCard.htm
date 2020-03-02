@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 
+    INTERNET BANKING PROJECT
+
+    Bank name           : TRUE Bank
+    Date Created        :  2013
+    Created By          : Er Jacelyn
+
+    Filename            : TCard.htm
+    Fileincluded        : 
+    Supporting files    : layout.css, TCard.css, ddmJS.js
+-->
+
+<head>
+    <title>TRUE Bank</title> 
+    <link href ="css/layout.css" rel ="Stylesheet" type="text/css"/>
+    <link href="css/Cards/TCard.css" rel="Stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="../Image/Home/truelogo.png" />
+    <script src="script/ddmJS.js" type="text/javascript"></script>
+    <style type="text/css">
+    
+    hr
+        {
+            width: 720px;
+            margin-left: 280px;
+            border: 0;
+            height: 1px;
+            background: #333;
+            background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+            background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc);
+            background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc); 
+            background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);  
+        }
+    </style>
+    <script type="text/javascript">
+        adImages = new Array("image/Cards/cardBanner3.jpg", "image/Cards/CBanner1.png", "image/Cards/cardBanner2.png", "image/Cards/cardBanner4.png");
+        thisAd = 0
+        imgCt = adImages.length
+        function rotate() {
+            if (document.images) {
+                thisAd++
+                if (thisAd == imgCt) {
+                    thisAd = 0
+                }
+                document.adBanner.src = adImages[thisAd]
+                setTimeout("rotate()", 3 * 1000)
+            }
+        }
+
+        function showDCard() {
+
+            document.getElementById("DCard").src = "Image/Cards/DCard.png";
+
+        }
+
+        function hideDCard() {
+
+            document.getElementById("DCard").src = "Image/Cards/TCard.png";
+
+        }
+
+        function showDebit1() {
+
+            document.getElementById("debit1").src = "Image/Cards/debitVisa.png";
+
+        }
+
+        function hideDebit1() {
+
+            document.getElementById("debit1").src = "Image/Cards/debit1.png";
+
+        }
+
+        
+</script>
+</head>
+
+<body>
+<header id="top">
+<a href="../Home.htm"><img src ="image/TRUEBankBanner.png" alt= "TRUE Bank" width="1000px" height="150px"/></a>
+<br />
+<br />
+<!-------------------------------Start of the top navigation--------------------------------->
+<nav>
+    <ul id="topnav">
+<!-- navhome -->
+        <li>
+            <a href="../Home.htm">Home<img src="Image/homeicon.png" alt="homeimg" width="30px" height="30px"/></a>
+        </li>
+<!-- navloans -->
+        <li>
+            <a href="../Loans/Loan.htm">TLoans<img src="Image/Loanicon.png" alt="loanimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="../Loans/Overview.htm">Travelling loans</a></li>
+                    <li><a href="#">Education loans</a></li>
+                    <li><a href="#">Car loans</a></li>
+                    <li><a href="#">Property loans</a></li>
+                </ul>
+        </li>
+<!-- navdeposit -->
+        <li>
+            <a href="../Deposit/overall.htm">TDeposit<img src="Image/depositicon.png" alt="depositimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="../Deposit/overview.htm">Fixed Deposit</a></li>
+                    <li><a href="#">Saving Account</a></li>
+                    <li><a href="#">Current Account</a></li>
+                </ul>
+        </li>
+<!-- navcards -->
+        <li>
+            <a href="TCard.htm">TCards<img src="Image/cardicon.png" alt="cardimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="TDebitCard.htm">Debit Card</a></li>
+                    <li><a href="#">Credit Cards</a></li>
+                </ul>
+        </li>
+<!-- navpayment -->
+        <li>
+            <a href="../Payment/Tpayment.htm">TPayment<img src="Image/paymenticon.png" alt="paymentimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="../Payment/overview.htm">Fund Transfer</a></li>
+                    <li><a href="#">Bill Payment</a></li>
+                    <li><a href="#">Credit Payment</a></li>
+                </ul>
+        </li>
+    </ul>
+</nav>
+<body onload="rotate()">
+<br /><br /><br />
+    <img src="image/Cards/CBanner1.png" width="1000px" height="250px" name="adBanner" alt="Ad Banner" />
+</body>
+<br />
+<br />
+<hr>
+<a href="../ContactUs.htm"><img src="Image/Hotlines.png" width="185px" height="250px" alt="Hotlines" id="hotlines"/></a>
+<!-------------------------------End of the top navigation----------------------------------->
+ </header>
+
+
+<br />
+<br />
+
+<section>
+<h1>Debit Cards</h1>
+<article id="border">
+<a href="TDebitCard.htm"><img src="Image/Cards/TCard.png" alt="image" id="DCard" width="350px" height="230px" onmouseover="showDCard();" onmouseout="hideDCard();" /></a>
+<a href="#"><img src="Image/Cards/debit1.png" alt="image" id="debit1" width="350px" height="220px" onmouseover="showDebit1();" onmouseout="hideDebit1();" /></a>
+</article>
+</section>
+<hr>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+<section>
+<h2>Privileges</h2>
+<article class="border">
+<img src="image/Cards/cart.png" alt="image" width="100px" height="100px" /><br />
+<br />
+<img src="image/Cards/entertainment.png" alt="image" width="100px" height="100px" />
+<br />
+<img src="image/Cards/piggy-bank.jpg" alt="image" width="100px" height="90px" />
+<article class="right">
+<h3>Retail</h3>
+<p>Shop at retail outlets across Singapore with discounts of up to 30%
+</p>
+<br />
+<h3>Entertainment</h3>
+<p>Priority entry and discounts for concerts, performances and movies
+</p>
+<br />
+<h3>Cash rebate</h3>
+<p>Every 3 months, 0.3% of your spending is credited back to your account
+</p>
+</article>
+</article>
+</section>
+<br />
+<footer>
+
+<div id="sitelink">
+        <div id="Returntop"><a href="#top">Return to Top &#8657;</a></div>
+                
+</div>
+
+<address>
+        &copy; Copyright 2013 TRUEBank Ltd | All Rights Reserved | Co. Reg. No.19420106W | 
+        <a href="#">Contact Us</a> <br />
+                <a href="http://www.facebook.com" target="new"><img src="Image/facebook.png" alt="facebook" /></a>
+                <a href="http://www.twitter.com" target="new"><img src="Image/Twitter.png" alt="twitter" /></a>
+                <a href="http://www.youtube.com" target="new"><img src="Image/youtube.png" alt="youtube" /></a>
+                <a href="http://www.newsfeeds.com" target="new"><img src="Image/newsfeeds.png" alt="newsfeed" /></a>
+</address>
+
+</footer>
+
+</body>
+</html>

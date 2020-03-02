@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" :>
+<!-- 
+    INTERNET BANKING PROJECT
+
+    Bank name           : TRUE Bank
+    Date Created        :  2013
+    Created By          : Lee Rui Peng
+
+    Filename            : Home.htm
+    Fileincluded        : 
+    Supporting files    : layout.css, bannerWbuttons.css, Homestyle.css, ddmJS.js
+-->
+
+<head>
+    <title>TRUE Bank</title> 
+    <link href="css/layout.css" rel="Stylesheet" type="text/css" />
+    <link href="css/Homestyle.css" rel ="Stylesheet" type="text/css"/>
+    <link href="css/tabcontent.css" rel="Stylesheet" type="text/css" />
+    <link href="css/bannerWbuttons.css" rel="Stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="Image/Home/truelogo.png" />
+    <script src="script/ddmJS.js" type="text/javascript"></script>
+    <script src="script/tabcontent.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>
+        jQuery(function ($) {
+            var timer;
+            function button1_click(event) {
+                $(".slide").css("visibility", "hidden");
+                $("#image1").css("visibility", "visible");
+                $("#image1").css("opacity", "0");
+                $("#image1").animate({ "opacity": 1 }, 300, "linear", null);
+                $("ul.buttons li").removeClass("active");
+                $("#image1").animate({ "opacity": 1 }, 300, "linear", null);
+                $("#button1").addClass("active");
+                clearTimeout(timer);
+                timer = setTimeout(eval("button2_click"), "3000");
+                $("#image1").animate({ "opacity": 1 }, 300, "linear", null);
+            }
+
+            function button2_click(event) {
+                $(".slide").css("visibility", "hidden");
+                $("#image2").css("visibility", "visible");
+                $("#image2").css("opacity", "0");
+                $("#image2").animate({ "opacity": 1 }, 300, "linear", null);
+                $("ul.buttons li").removeClass("active");
+                $("#image2").animate({ "opacity": 1 }, 300, "linear", null);
+                $("#button2").addClass("active");
+                clearTimeout(timer);
+                timer = setTimeout(eval("button3_click"), "3000");
+                $("#image2").animate({ "opacity": 1 }, 300, "linear", null);
+            }
+
+            function button3_click(event) {
+                $(".slide").css("visibility", "hidden");
+                $("#image3").css("visibility", "visible");
+                $("#image3").css("opacity", "0");
+                $("#image3").animate({ "opacity": 1 }, 300, "linear", null);
+                $("ul.buttons li").removeClass("active");
+                $("#image3").animate({ "opacity": 1 }, 300, "linear", null);
+                $("#button3").addClass("active");
+                clearTimeout(timer);
+                timer = setTimeout(eval("button4_click"), "3000");
+                $("#image3").animate({ "opacity": 1 }, 300, "linear", null);
+            }
+
+            function button4_click(event) {
+                $(".slide").css("visibility", "hidden");
+                $("#image4").css("visibility", "visible");
+                $("#image4").css("opacity", "0");
+                $("#image4").animate({ "opacity": 1 }, 300, "linear", null);
+                $("ul.buttons li").removeClass("active");
+                $("#image4").animate({ "opacity": 1 }, 300, "linear", null);
+                $("#button4").addClass("active");
+                clearTimeout(timer);
+                timer = setTimeout(eval("button1_click"), "3000");
+                $("#image4").animate({ "opacity": 1 }, 300, "linear", null);
+            }
+
+            function OnLoad(event) {
+                clearTimeout(timer);
+                timer = setTimeout(eval("button2_click"), "3000");
+            }
+
+            $('#button1').bind('click', button1_click);
+
+            $('#button2').bind('click', button2_click);
+
+            $('#button3').bind('click', button3_click);
+
+            $('#button4').bind('click', button4_click);
+
+            OnLoad();
+
+        });
+
+</script>
+
+</head>
+<body>
+<header id="top">
+<a href="#"><img src ="image/TRUEBankBanner.png" alt= "TRUE Bank" width="1000px" height="150px"/></a>
+<br />
+<br />
+<!-------------------------------Start of the top navigation--------------------------------->
+<nav>
+    <ul id="topnav">
+<!-- navhome -->
+        <li>
+            <a href="#">Home<img src="Image/homeicon.png" alt="homeimg" width="30px" height="30px"/></a>
+        </li>
+<!-- navloans -->
+        <li>
+            <a href="Loans/Loan.htm">TLoans<img src="Image/Loanicon.png" alt="loanimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="Loans/Overview.htm">Travelling loans</a></li>
+                    <li><a href="#">Education loans</a></li>
+                    <li><a href="#">Car loans</a></li>
+                    <li><a href="#">Property loans</a></li>
+                </ul>
+        </li>
+<!-- navdeposit -->
+        <li>
+            <a href="Deposit/overall.htm">TDeposit<img src="Image/depositicon.png" alt="depositimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="Deposit/overview.htm">Fixed Deposit</a></li>
+                    <li><a href="#">Saving Account</a></li>
+                    <li><a href="#">Current Account</a></li>
+                </ul>
+        </li>
+<!-- navcards -->
+        <li>
+            <a href="Cards/TCard.htm">TCards<img src="Image/cardicon.png" alt="cardimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="Cards/TDebitCard.htm">Debit Cards</a></li>
+                    <li><a href="#">Credit Cards</a></li>
+                </ul>
+        </li>
+<!-- navpayment -->
+        <li>
+            <a href="Payment/Tpayment.htm">TPayment<img src="Image/paymenticon.png" alt="paymentimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="Payment/overview.htm">Fund Transfer</a></li>
+                    <li><a href="#">Bill Payment</a></li>
+                    <li><a href="#">Credit Payment</a></li>
+                </ul>
+        </li>
+    </ul>
+</nav>
+<!-------------------------------End of the top navigation----------------------------------->
+ </header>
+
+<section>
+    <div class="slideshow">
+        <ul class="buttons">
+            <li class="active" id="button1"><a href="#" title="website named desire">1</a></li>
+            <li id="button2"><a href="#" title="">2</a></li>
+            <li id="button3"><a href="#" title="">3</a></li>
+            <li id="button4"><a href="#" title="">4</a></li>
+        </ul>
+
+        <ul class="slides">
+            <li style="visibility:visible" class="slide" id="image1">
+            <a href="Loans/Overview.htm"><img alt="Travelling loan" src="Image/Home/Travellingloan.png" /></a></li>
+            <li class="slide" id="image2">
+            <a href="Deposit/overview.htm"><img alt="Fixed Deposit" src="Image/Home/Fixeddeposit.png" /></a></li>
+            <li class="slide" id="image3">
+            <a href="Cards/TDebitCard.htm"><img alt="Cards" src="Image/Home/Card.png" /></a></li>
+            <li class="slide" id="image4">
+            <a href="Payment/overview.htm"><img alt="Flash Transfer" src="Image/Home/Fundtransfer.png" /></a></li>
+        </ul>
+    </div>
+<br /><br /><br /><br /><br /><br /><br /><br />
+<div style="width: 750px; padding: 120px 0 0px;">
+        <ul class="tabs" data-persist="true">
+            <li><a href="#view1">LATEST UPDATES</a></li>
+            <li><a href="#view2">WHAT'S NEW</a></li>
+            <li><a href="#view3">MOST POPULAR</a></li>
+        </ul>
+        <div class="tabcontents">
+            <div id="view1">
+					<table id="tab1">
+						<tr>
+							<td>
+                                <strong class="dates">[ 31/07/2013 ]</strong> : <a href="Loans/Overview.htm">New Scheme for Travelling loan in TRUEBank!</a><img src="Image/new.png" height="25px" width="40px" />
+							</td>
+						</tr>
+                            <td>
+                                <strong class="dates">[ 26/07/2012 ]</strong> : <a href="ContactUs.htm#O">Opening of New TRUEBank Branch at Orchard Rd!</a><img src="Image/new.png" height="25px" width="40px" />
+                            </td>
+						<tr>
+                            <td>
+                                <strong class="dates">[ 26/07/2012 ]</strong> : <a href="Deposit/overview.htm">Enjoy 1.00% p.a. on a 12-month Singapore Dollar Fixed Deposit!</a><img src="Image/new.png" height="25px" width="40px" />
+                            </td>
+						</tr>
+						<tr>
+                            <td>
+                                <strong class="dates">[ 24/07/2012 ]</strong> : <a href="Home.htm">Our banking services will be disrupted between 8 and 9 September</a><img src="Image/event.png" height="25px" width="40px" />
+                            </td>
+						</tr>
+						<tr>
+                            <td>
+                                <strong class="dates">[ 20/07/2012 ]</strong> : <a href="Cards/TDebitCard.htm">Sign up for our cards to enjoy 0.3% cash rebates!</a><img src="Image/new.png" height="25px" width="40px" />
+                            </td>
+						</tr>
+                        <tr>
+                            <td>
+                               <strong class="dates">[ 15/07/2012 ]</strong> : <a href="Payment/overview.htm">Fund transfer service fee will give an 50% discount!</a><img src="Image/new.png" height="25px" width="40px" />
+                            </td> 
+						</tr>
+                        <tr>
+                            <td>
+                                <strong class="dates">[ 20/06/2012 ]</strong> : <a href="http://www.facebook.com">Like us on Facebook</a>, <a href="http://www.twitter.com">Follow us on Twitter</a> for the regular updates!<img src="Image/event.png" height="25px" width="40px" />
+                            </td>
+						</tr>
+					</table>
+            </div>
+            <div id="view2">
+                <a href="Deposit/overview.htm#depositpromotion"><img src="Image/Home/promo banner.jpg" width="688px" height="240px"/></a>
+            </div>
+            <div id="view3">
+                <a href="Loans/Overview.htm#loanpromotion"><img src="Loans/image/Travelling loan/banner_taxi.png" width="688px" height="240px"/></a>
+            </div>
+        </div>
+</div>
+    <div id="tableproducts">
+        <table cellspacing="1">
+            <tr>
+                <td>
+                    <strong class="tableproducts">Travelling Loan</strong><br />
+                    <img src="Image/Home/tableTL.png" width="150px" height="120px" />
+                </td>
+                <td>
+                    Anytime, Anywhere give <br />a call to TRUE Bank and<br /> obtain your cash.<br /><a href="Loans/Overview.htm"><strong>click here to find out more!</strong></a>
+                </td>
+                <td>
+                    <strong class="tableproducts">Fixed Deposit</strong><br />
+                    <img src="Image/Home/tableFD.png" width="150px" height="120px" />
+                </td>
+                <td>
+                    Apply for Fixed Deposit's <br />promotion easily with our bank. <br /><a href="Deposit/overview.htm"><strong>click here to find out more!</strong></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong class="tableproducts">Debit Card</strong><br />
+                    <img src="Image/Home/tableDC.png" width="150px" height="120px" />
+                </td>
+                <td class="style1">
+                    With TRUE Debit PayPass <br />MasterCard, you’ll get to enjoy <br />hassle-free “tap and go” <br />payment method. 
+                    <br /><a href="Cards/TDebitCard.htm"><strong>click here to find out more!</strong></a>
+                </td>
+                <td>
+                    <strong class="tableproducts">Fund Transfer</strong><br />
+                    <img src="Image/Home/tableFT.png" width="150px" height="120px" />
+                </td>
+                <td>
+                   Fund Transfer consists of <br />GIRO, Flash Transfer, <br />Fixed Deposit and Message <br />
+                   Warning to have a convenient<br /> transfer for the users.<br /><a href="Payment/overview.htm"><strong>click here to find out more!</strong></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="box">
+        <div id="products">
+            <table>
+                <tr id="Bproducts">
+                    <td><img src="Image/productsicon.png" width="30px" height="30px" />News Products</td>
+                </tr>
+                <tr id="Btravellingloans">
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="Loans/Overview.htm"><img src="Image/Home/TL.png" /></a>
+                    </td>
+                </tr>
+                <tr id="Bfixeddeposit">
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="Deposit/overview.htm"><img src="Image/Home/FD.png" /></a>
+                    </td>
+                </tr>
+                <tr id="Bdebitcards">
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="Cards/TDebitCard.htm"><img src="Image/Home/DC.png" /></a>
+                    </td>
+                </tr>
+                <tr id="Bfundtransfer">
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="Payment/overview.htm"><img src="Image/Home/FT.png" /></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <div id="contact">
+            <a href="ContactUs.htm"><img src="Image/contactus.png" width="223px" height="120px"/></a>
+        </div>
+        <br />
+        <div id="social">
+            <table>
+                <tr>
+                    <td id="socialM"><img src="Image/socialicon.png" width="30px" height="30px" />Social Media</td>
+                </tr>
+                <tr id="facebook">
+                    <td>
+                        <img src="Image/Home/facebook.png" width="50px" height="50px" /><a href="http://www.facebook.com">
+                        TRUE Bank's Facebook page will notify you the lastest updates and promotions!</a>
+                    </td>
+                </tr>
+                <tr id="twitter">
+                    <td>
+                        <img src="Image/Home/twitter.png" width="50px" height="50px" /><a href="http://www.twitter.com">
+                        TRUE Bank's Twitter page provides FAQ to clear your doubt immediately!</a>
+                    </td>
+                </tr>
+                <tr id="youtube">
+                    <td>
+                        <img src="Image/Home/youtube.png" width="50px" height="50px" /><a href="http://www.youtube.com">
+                        TRUE Bank's Youtube channel provides relevant and unprejudiced information to let you to have 
+                        a better understanding of our bank!</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<aside>       
+</aside>
+
+<footer>
+
+<div id="sitelink">
+        <div id="Returntop"><a href="#top">Return to Top &#8657;</a></div>
+</div>
+
+<address>
+        &copy; Copyright 2013 TRUEBank Ltd | All Rights Reserved | Co. Reg. No.19420106W | 
+        <a href="ContactUs.htm">Contact Us</a> 
+        <br />
+                <a href="http://www.facebook.com" target="new"><img src="Image/facebook.png" alt="facebook"/></a>
+                <a href="http://www.twitter.com" target="new"><img src="Image/Twitter.png" alt="twitter"></a>
+                <a href="http://www.youtube.com" target="new"><img src="Image/youtube.png" alt="youtube"/></a>
+                <a href="http://www.newsfeeds.com" target="new"><img src="Image/newsfeeds.png" alt="newsfeed"/></a>
+</address>
+
+</footer>
+
+</body>
+</html>

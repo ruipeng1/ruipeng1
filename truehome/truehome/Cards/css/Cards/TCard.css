@@ -1,0 +1,59 @@
+﻿body {
+}
+
+/* Section styles */
+section
+{
+    margin-left: 260px;
+    margin-top: -300px;
+    width: 950px;
+}
+
+p 
+{
+    margin-left: 5px;
+}
+
+h1, h2 
+{
+    font-family: Arial Black;
+    text-indent: 2px;
+    color: #D00000;
+}
+
+p 
+{
+    font-family: Times New Roman;
+    font-size: 1.1em;
+}
+
+article#border 
+{
+    width: 696px;
+    padding: 20px;
+    margin-top: -15px;
+}
+
+article.border 
+{
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: red;
+    width: 650px;
+    padding: 40px;   
+}
+  
+article.right 
+{ 
+    float: right;
+    margin-right: -15px;
+    margin-top: -240px;
+}
+
+#debit1
+{
+    float: right;
+    margin-right: -20px;
+}
+

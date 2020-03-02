@@ -1,0 +1,55 @@
+﻿/* 
+    INTERNET BANKING PROJECT
+
+    Bank name           : TRUE Bank
+    Date Created        :  2013
+    Created By          : Lee Rui Peng
+
+    Filename            : faq.css
+    Supporting files    : FAQ.htm
+*/
+
+section
+{
+    margin-top: -564px;
+    margin-left: 200px;
+    font-family: Arial;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 20px;
+    border-color: #B00101;
+}
+
+#QnA
+{
+    font-family: Arial;
+}
+
+#qn1, #qn2, #qn3, #qn4, #qn5, #qn6, #qn7
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: White;
+    background-color: #FF4C00;
+    border-radius: 20px;
+    text-align: center;
+    width: 710px;
+    height: 55px;
+    margin: 10px 10px 10px 40px;
+}
+
+#qn1:hover, #qn2:hover, #qn3:hover, #qn4:hover, #qn5:hover, #qn6:hover, #qn7:hover
+{
+    background-color: #D00000;
+}
+
+#ans1, #ans2, #ans3, #ans4, #ans5, #ans6, #ans7
+{
+    margin-left: 50px;
+    display: none;
+}
+
+#bottomnav
+{
+    text-align: center;
+}

@@ -1,0 +1,290 @@
+﻿
+/*
+    INTERNET BANKING PROJECT
+
+    Bank name           : TRUE Bank
+    Date Created        :  2013
+    Created By          : Wang Han
+    Filename            : survey.css
+    Supporting files    : survey.htm
+*/
+
+/* Section Styles */
+section
+{
+    margin-top: -630px;
+    margin-left: 200px;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: #B00101;
+  
+}
+
+
+/* body styles  */
+
+body 
+{
+    font-family: Arial;
+    line-height:1.5em;
+    
+}
+
+h1
+{
+    color:#FF4900;
+    
+   
+    font-family: Arial Black;
+    font-size:2.5em;
+    text-align:center;
+    position:absolute;
+    height: 50px;
+    margin-top: 34px;
+    margin-right:40px;
+}
+
+
+
+h2
+{
+    color:White;
+    background-color: #FF7640;
+    font-family: Arial Black;
+    text-align:center;
+    margin-top:0px;
+}
+
+
+  
+
+
+
+
+
+ h3
+{
+    color:White;
+    background-color: #FF7640;
+    font-family: Arial Black;
+    text-align:center;
+    margin-top:0px;
+}
+
+ul li a
+{
+    color: #D00000;
+}
+
+#bottomnav
+{
+    text-align: center;
+}
+
+#sidenav
+{
+    margin-top:60px;
+}
+
+address
+{
+    margin-left: 200px;
+}
+
+#links
+{
+margin-right: 200px;
+}
+
+/* Field set styles */
+
+fieldset 
+{
+    background-color:rgb(255,246,205);
+    border:3px solid #FF7373;
+    margin:10px 0px 10px 6%;
+   
+    width:85%;
+}
+
+
+
+/* Lable styles */
+
+label 
+{
+    clear:left;
+    display:block;
+    float:left;
+    font-size:0.9em;
+    margin:7px 4% 7px 5px;
+    width:40%;
+}
+
+
+/* Input control styles */
+
+input 
+{
+    display:block;
+    float:left;
+    font-size:0.9em;
+    margin:7px 0px;
+    width:150px;
+}
+    
+input#state 
+{
+    width:50px;
+}
+
+/* Selection list styles */
+
+select 
+{
+    display:block;
+    float:left;
+    font-size:0.9em;
+    margin:7px 0px;
+}
+
+
+/* Option button styles */
+
+fieldset.optionGroup
+{
+    border-width:0px;
+    text-align:center;
+}
+
+
+fieldset.optionGroup label
+{
+    display:inline;
+    float:none;
+    margin:0px 3px 0px 0px;
+    width:30px;
+}
+
+
+fieldset.optionGroup input 
+{
+    display:inline;
+    float:none;
+    margin:0px 20px 0px 0px;
+    width:20px;
+}
+
+
+/* Text area styles */
+
+textarea 
+{
+    display:block;
+    font-size:0.9em;
+    float:left;
+    height:150px;
+    margin:10px 0px;
+    width:50%;
+}
+
+
+/* Check box styles */
+
+#newsletter 
+{
+    color:rgb(233,69,0);
+    float:none;
+    margin:10px auto;
+    text-align:center;
+    width:90%;
+}
+
+#newsletter input
+{
+    display:inline;
+    float:none;
+    width:20px;
+}
+
+
+/* Number input box styles */
+
+#ordersPerMonth 
+{
+    width:70px;
+}
+
+
+/* Range slider styles */
+
+label.sliderLabel
+{
+    clear:none;
+    font-size:0.7em;
+    margin:10px 0px;
+    text-align:center;
+    width:10px;
+}
+
+
+input[type="range"]
+{
+    width:150px;
+}
+
+/* Button styles */
+
+
+form p 
+{
+    text-align:center;
+}
+
+input[type="submit"],input[type="reset"] 
+{
+    display:inline;
+    float:none;
+    height:40px;
+    width:200px;
+}
+
+
+/* Validation styles */
+
+input:focus,select:focus,textarea:focus
+{
+    background-color:rgb(220,255,220);
+}
+
+input:focus:valid
+{
+    background:rgb(220,255,220) url(go.png) bottom right no repeat;
+    
+    -o-background-size:contain;
+    -moz-background-size:contain;
+    -webkit-background-size:contain;
+    background-size:contain;
+}
+
+input:focus:invaild
+{
+    background:rgb(255,232,233) url(stop.png) bottom right no-repeat;
+    -o-background-size:contain;
+    -moz-background-size:contain;
+    -webkit-background-size:contain;
+    background-size:contain;
+}
+article h3
+{
+               
+          -webkit-text-stroke: 2px red;
+          -webkit-text-fill-color: white; 
+          color: white;
+           
+          -webkit-animation: colorchange 1s infinite;
+          -webkit-animation-direction: alternate;
+}
+ 
+ 

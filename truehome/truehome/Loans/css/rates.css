@@ -1,0 +1,107 @@
+﻿/*
+    INTERNET BANKING PROJECT
+
+    Bank name           : TRUE Bank
+    Date Created        :  2013
+    Created By          : Lee Rui Peng
+    Filename            : information.css
+    Supporting files    : Information.htm
+*/
+
+/* Section Styles */
+section
+{
+    margin-top: -564px;
+    margin-left: 200px;
+    font-family: Arial;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 20px;
+    border-color: #B00101;
+}
+
+#bottomnav
+{
+    text-align: center;
+}
+
+#interestTitle
+{
+    color: White;
+    background-color: #FF4C00;
+    font-size: 30px;
+    font-family: Arial Black;
+    text-align: center;
+}
+
+#calTitle
+{
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Table Styles */
+table, #caption
+{
+    margin-left: 35px;
+}
+
+tbody tr, th
+{
+    color: White;
+    background-color: #D00000;
+    text-align: center;
+}
+
+thead th, tfoot tr
+{
+    color: White;
+    background-color: Black;
+    text-align: center;
+}
+
+select
+{
+    width: 153px;
+    height: 22px;
+}
+
+/* Validation Styles */
+input:focus, textarea:focus
+{
+    background-color: #95EE6B;
+}
+textarea:focus:valid
+{
+    background-color: #95EE6B;
+}
+
+textarea:focus:invalid
+{
+    background-color: #FFC6C6;
+}
+
+input:focus:valid
+{
+    background-color: #95EE6B;
+    background-image: url(../image/app_tick.png);
+    background-position: bottom right;
+	background-repeat: no-repeat;
+	-o-background-size: contain;
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;	
+}
+
+input:focus:invalid
+{
+    background-color: #FFC6C6;
+    background-image: url(../image/app_cross.png);
+    background-position: bottom right;
+	background-repeat: no-repeat;
+	-o-background-size: contain;
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;
+}   

@@ -1,0 +1,513 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>TRUE Bank</title> 
+    <link href ="css/layout.css" rel ="Stylesheet" type="text/css"/>
+    <link href ="css/tpayment.css" rel="Stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Font+Name">
+    <link rel="shortcut icon" href="../Image/Home/truelogo.png" />
+    <script src="script/ddmJS.js" type="text/javascript"></script>
+    <script src="script/dd.js" type="text/javascript"></script>
+    <script src="script/jquery-1.5.1.min.js" type="text/javascript"></script>
+    <script src="script/modernizr-1.7.min.js" type="text/javascript"></script>
+    <style type="text/css">
+        
+    #www
+    {
+        display:block;
+        text-align:left;
+        font-size:1.5em;
+        font-family:arial;
+        color:Black;
+        width:85%;
+        margin-left:85px;
+        margin-top:40px;
+    }
+    #wwwww
+    {
+        display:block;
+        text-align:center;
+        font-size:1.5em;
+        font-family:arial;
+        color:Black;
+        width:85%;
+        margin-left:85px;
+     
+    }
+    h2
+    {
+        color:Red;
+        font-size:2.2em;
+        margin-top:40px;
+    }
+    #rrr
+    {
+        display:block;
+        width:25%;
+        margin-right:600px;
+      
+    }
+       #rrrr
+    {
+        display:block;
+        width:25%;
+        margin-right:600px;
+        color:Olive;
+      
+    }
+       #rrrrr
+    {
+        display:block;
+        width:25%;
+        margin-right:600px;
+        color:Red;
+      
+    }
+    #sese
+    {
+        text-align:left;
+        color:Black;
+        font-size:1.2em;
+        display:block;
+        width:80%;
+        margin-left:85px;
+        margin-top:20px;
+    }
+    
+    
+    .help_step_box
+    {background:#f1f7e4;height:55px;overflow:hidden;border-top:1px solid #FFF;}
+.help_step_item{float:left;height:55px;line-height:55px;padding:0 25px 0 45px;cursor:pointer;position:relative;font-size:14px;font-weight:bold;}
+.help_step_num{width:19px;height:19px;line-height:19px;position:absolute;text-align:center;top:18px;left:20px;font-size:16px;font-weight:bold;background:url(http://www.111cn.net/blog/upload/image/20101124174342.png);color:#156600;}
+.help_step_set{background:#27a806;color:#FFF;}
+.help_step_set .help_step_left{width:8px;height:55px;background:url(http://www.111cn.net/blog/upload/image/20101124174427.jpg) left top no-repeat;position:absolute;left:0;top:0;}
+.help_step_set .help_step_right{width:8px;height:55px;background:url(http://www.111cn.net/blog/upload/image/20101124174427.jpg) left bottom no-repeat; position:absolute;right:-8px;top:0;}
+
+        </style>
+    <style type="text/css" media="screen">    
+
+            .main_top_2 
+            {
+                width: 980px;
+                height: 428px;
+                background: url(image/payment/banner205_.jpg) no-repeat;
+                position: relative;
+            }
+            .main_top_2 dl
+            {
+                width: 250px;
+                position: absolute;
+                right: 50px;
+                top: 130px;
+                color: #f8f8f8;
+                font-family:  \5FAE\8F6F\96C5\9ED1,Arial,\5B8B\4F53;
+            }
+            .main_top_2 dl dt
+            {
+                font-size: 38px;
+                line-height: 59px;
+            }
+            .main_top_2 dl dd
+            {
+                font-size: 12px;
+                line-height: 20px;
+            }
+
+            .main_top_1 
+            {
+                width: 980px;
+                height: 428px;
+                background: url(image/payment/banner2222.jpg) no-repeat;
+                position: relative;
+            }
+            .main_top_1 dl
+            {
+                width: 250px;
+                position: absolute;
+                right: 50px;
+                top: 130px;
+                color: #f8f8f8;
+                font-family:  \5FAE\8F6F\96C5\9ED1,Arial,\5B8B\4F53;
+            }
+            .main_top_1 dl dt
+            {
+                font-size: 38px;
+                line-height: 59px;
+            }
+            .main_top_1 dl dd
+            {
+                font-size: 12px;
+                line-height: 20px;
+            }
+
+            .main_top_3 
+            {
+                width: 980px;
+                height: 428px;
+                background: url(image/payment/bannner12121.jpg) no-repeat;
+                position: relative;
+            }
+            .main_top_3 dl
+            {
+                width: 250px;
+                position: absolute;
+                right: 50px;
+                top: 130px;
+                color: #f8f8f8;
+                font-family:  \5FAE\8F6F\96C5\9ED1,Arial,\5B8B\4F53;
+            }
+            .main_top_3 dl dt
+            {
+                font-size: 38px;
+                line-height: 59px;
+            }
+            .main_top_3 dl dd
+            {
+                font-size: 12px;
+                line-height: 20px;
+            }
+</style>
+      
+
+
+
+</head>
+
+<base target="_blank" />
+   
+<body>
+<header id="top">
+<a href="../Home.htm"><img src ="image/TRUEBankBanner.png" alt= "TRUE Bank" width="1000px" height="150px"/></a>
+<br /><br />
+<!-------------------------------Start of the top navigation--------------------------------->
+<nav>
+    <ul id="topnav">
+<!-- navhome -->
+        <li>
+            <a href="../Home.htm">Home<img src="Image/homeicon.png" alt="homeimg" width="30px" height="30px"/></a>
+        </li>
+<!-- navloans -->
+        <li>
+            <a href="../Loans/Loan.htm">TLoans<img src="Image/Loanicon.png" alt="loanimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="../Loans/Overview.htm">Travelling loans</a></li>
+                    <li><a href="#">Education loans</a></li>
+                    <li><a href="#">Car loans</a></li>
+                    <li><a href="#">Property loans</a></li>
+                </ul>
+        </li>
+<!-- navdeposit -->
+        <li>
+            <a href="../Deposit/overall.htm">TDeposit<img src="Image/depositicon.png" alt="depositimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="../Deposit/overview.htm">Fixed Deposit</a></li>
+                    <li><a href="#">Saving Account</a></li>
+                    <li><a href="#">Current Account</a></li>
+                </ul>
+        </li>
+<!-- navcards -->
+        <li>
+            <a href="../Cards/TCard.htm">TCards<img src="Image/cardicon.png" alt="cardimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="../Cards/TDebitCard.htm">Debit Cards</a></li>
+                    <li><a href="#">Credit Cards</a></li>
+                </ul>
+        </li>
+<!-- navpayment -->
+        <li>
+            <a href="Tpayment.htm">TPayment<img src="Image/paymenticon.png" alt="paymentimg" width="30px" height="30px"/></a>
+                <ul>
+                    <li><a href="overview.htm">Fund Transfer</a></li>
+		            <li><a href="#">Bill Payment</a></li>
+                    <li><a href="#">Credit Payment</a></li>
+                </ul>
+        </li>
+    </ul>
+</nav>
+<!-------------------------------End of the top navigation----------------------------------->
+ </header>
+<br />
+<br />
+<!-------------------------------Start of the side navigation----------------------------------->
+
+<!-------------------------------End of the side navigation----------------------------------->
+
+	<article>
+<script type="text/javascript">
+    yo_topNav.init('black');
+    initNavigation();
+    </script>
+<div>
+	<div class="mobile_content" id="mobile_content">
+		<div class="box">
+			<div class="box1">
+				<div class="main">
+					<div class="main1">
+						<div class="main_top_2">
+							<dl id="rrr">
+								<dt>Fund Transfer </dt>
+								<dd>Our alternative product under payment <br />
+								 Special for those family who have children study overseas.
+								
+                                <span><a href="overview.htm">Read more</a></span>
+								</dd>
+							</dl>
+						</div>
+						<div class="main_con">
+							<div class="main_title">
+								Overview</div>
+                                <p id="www">There are four different services are provided under this product. They are Giro, flash transfer, fixed deposit and message warning. All of them work together to make the user transfer money more conveniently.</p>
+							<br />
+                            <br />
+                            <br /><div class="main_move">
+								<div class="main_list" id="main_list2">
+									<div class="list1">
+										<dl>
+											<dt><a href="giro.htm">
+											<img src="image/payment/giro.jpg" alt="" width="210px"; height="110px";/>
+											</a><span><a href=giro.htm>
+											<img src="image/payment/giro.jpg" alt="" style="width: 43px; height: 43px" />
+											</a></span></dt>
+											<dd>
+											<h2>GIRO</h2>
+											<p>For Giro, when students go to study overseas, their parents could be worried about their children having expensive vices. And thus many of them prefer to transfer money monthly to their children’s account</p>
+											<span><a href="giro.htm">Read more</a></span>
+											</dd>
+										</dl>
+										<dl>
+											<dt><a href="flashtransfer.htm">
+											<img src="image/payment/flashtransfer.jpg" alt="" width="210px"; height="110px";/>
+											</a><span><a href="flashtransfer.htm">
+											<img src="image/payment/flashtransfer.jpg" alt="" style="width: 43px; height: 43px" />
+											</a></span></dt>
+											<dd>
+											<h2>Flash Transfer</h2>
+											<p>For flash transfer, when there are some emergency happened to the students, their family could transfer money at the fastest speed. 
+											</p>
+											<span><a href="flashtransfer.htm">Read more</a></span>
+											</dd>
+										</dl>
+										<dl>
+											<dt><a href="fixdeposit.htm">
+											<img src="image/payment/fixed DEPOSIT.jpg" alt="" width="210px"; height="110px";/>
+											</a><span><a href="fixdeposit.htm">
+											<img src="image/payment/fixed DEPOSIT.jpg" alt="" style="width: 43px; height: 43px" />
+											</a></span></dt>
+											<dd>
+											<h2>Fixed Deposit</h2>
+											<p>For fixed deposit, the money in the parent’s account could earn more interest.
+
+</p>
+											<span><a href="fixdeposit.htm">Read more</a></span>
+											</dd>
+										</dl>
+										<dl>
+											<dt><a href="messagewarning.htm">
+											<img src="image/payment/message warning.jpg" alt="" width="210px"; height="110px";/>
+											</a><span><a href="messagewarning.htm">
+											<img src="image/payment/message warning.jpg" alt="" style="width: 43px; height: 43px" />
+											</a></span></dt>
+											<dd>
+											<h2>Message Warning</h2>
+											<p>For message warning, the parents could know the reminding money in their children’s account. And the automatically fund transfer service ensure that there always are enough money with their children.</p>
+											<span><a href="messagewarning.htm">Read more</a></span>
+											</dd>
+										</dl>
+										
+									</div>
+								</div>
+							</div>
+							<div class="main_num" id="main_num12">
+								<span class="on"></span></div>
+						</div>
+					</div>
+					<div class="main1">
+						<div class="main_top_1">
+							<dl id="rrrr">
+								<dt>Special Introduction  <br />
+								 
+								</dt>
+								<dd>
+                                of our new produvt
+                                <br />
+                                About how does it operate;
+                                <br />
+                                how to apply and use this service? <br />
+								
+								
+								</dd>
+							</dl>
+						</div>
+						<div class="main_con">
+							<div class="main_title">
+								How does it work? </div>
+							<div class="main_move">
+								
+						
+                       <div class="help_wrap" style="margin-left:60px"/>
+  <div class="help_step_box fa">
+    <div onclick="javascript:go_fa_step(1)" id="fa_1" class="help_step_item">
+      <div class="help_step_num">1</div>
+      Apply our service
+      <div class="help_step_right"></div>
+    </div>
+    <div onclick="javascript:go_fa_step(2)" id="fa_2" class="help_step_item help_step_set">
+      <div class="help_step_left"></div>
+      <div class="help_step_num">2</div>
+      GIRO
+      <div class="help_step_right"></div>
+    </div>
+    <div onclick="javascript:go_fa_step(3)" id="fa_3" class="help_step_item">
+      <div class="help_step_left"></div>
+      <div class="help_step_num">3</div>
+      Fixed Deposit
+      <div class="help_step_right"></div>
+    </div>
+    <div onclick="javascript:go_fa_step(4)" id="fa_4" class="help_step_item">
+      <div class="help_step_left"></div>
+      <div class="help_step_num">4</div>
+      Flash Transfer
+      <div class="help_step_right"></div>
+    </div>
+    <div onclick="javascript:go_fa_step(5)" id="fa_5" class="help_step_item">
+      <div class="help_step_left"></div>
+      <div class="help_step_num">5</div>
+      Message Warning
+      </div>
+    </div>
+  </div>
+  <script language="javascript">
+      function go_fa_step(id) {
+          for (i = 1; i < 6; i++) {
+              document.getElementById("fa_" + i).className = 'help_step_item';
+          }
+          document.getElementById("fa_" + id).className += " help_step_set"
+      }
+</script>
+<p id="sese">(1). First，the parents could connect their account with their children <br /><br />
+
+(2). Then, our bank will transfer the fixed amount of money from the parents to the children’s account for them regularly and there will be given a discount of fee for transfer money between the connected accounts.
+<br /><br />
+(3). The money in parent’s account will be treated as fixed deposit with different period with different interest rate.
+<br /><br />
+(4). The users could state a minimum amount of the students’ card, if the money in their children’s accounts met that amount , a message will also send to the parents. <br />
+At the same time, an amount of money (the parents agree before) will transfer to their children automatically by a flash transfer service. 
+<br /><br />
+
+(5). An extra service will be provided to the connected accounts, if both of their accounts are in our bank. Every time after the parents transfer the money to their children’s account or their children withdraw money from their account, the parents could receive a message from our bank to tell them the remind money in their children’s account. 
+
+When there is an emergency happened to the students. The money can be transfer at the fastest speed. They can bind their phone with their account and then we will provide them a pin number. Thus, when the customers want to have a flash transfer, they could SMS or call us.</p>
+
+
+
+<div class="main_list" id="main_list1">
+									<div class="list1">
+										
+									</div>
+								</div>
+							</div>
+	<div class="main_num" id="main_num11">
+								<span class="on"></span></div>
+						</div>
+
+					</div>
+					<div class="main1">
+						<div class="main_top_3">
+							<dl id="rrrrr">
+								<dt>Promotion! </dt>
+								<dd>This money we provide special promotion for this product<br />
+                               Finish our survey,we'll send you special gift.
+								</dd>
+							</dl>
+						</div>
+						<div class="main_con">
+							<div class="main_title">
+								Promotion and Gift </div>
+							<div class="main_move">
+                           <h2 style="margin-bottom:20px;">Promotion</h2>
+                           <img src="image/payment/promotion.jpg" />
+                         <p id="wwwww">   We provide special promotion for Fund Transfer service this month.All new account can be register free and fund transfer fee under this service will be given 20% discount.Don't miss this! 
+                           </p>
+                           
+                            <h2>Gift</h2>
+                            <p id="wwwww">Once you finish our survice, we'll send you a small and special gift.</p>
+<span><a href="survey.htm">Do survey here</a></span>
+								<div class="main_list" id="main_list3">
+								</div>
+							</div>
+							<div class="main_num" id="main_num13">
+								<span class="on"></span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main_top_left">
+			</div>
+			<div class="main_top_left_img">
+			</div>
+			<div class="main_top_right">
+			</div>
+			<div class="main_top_right_img">
+			</div>
+		</div>
+	</div>
+	<br />
+	<script type="text/javascript">
+	    WidthMove("mobile_content");
+            </script>
+</div>
+
+</article>
+
+
+<!-------------------------------Start of the bottom navigation------------------------------->
+<nav id="bottomnav">
+    <ul>
+        <li>
+            <a href="overview.htm">Overview &#8226;</a>
+        </li>
+        <li>
+            <a href="giro.htm">GIRO &#8226;</a>
+        </li>
+        <li>
+            <a href="fixdeposit.htm">Fixed Deposit &#8226;</a>
+        </li>
+        <li>
+            <a href="messagewarning.htm">Message Warning &#8226;</a>
+        </li>
+        <li>
+            <a href="flashtransfer.htm">Flash Transfer &#8226;</a>
+        </li>
+         <li>
+            <a href="survey.htm"">Survey</a>
+        </li>
+
+    </ul>
+</nav>
+
+
+<!---------------------------------End of the bottom navigation------------------------------->
+</section>
+<br />
+<footer>
+
+<div id="sitelink">
+        <div id="Returntop"><a href="#top">Return to Top &#8657;</a></div>
+</div>
+<address>
+        &copy; Copyright 2013 TRUEBank Ltd | All Rights Reserved | Co. Reg. No.19420106W | 
+        <a href="../ContactUs.htm">Contact Us</a>
+		<br>
+		<div id="links">
+                <a href="http://www.facebook.com" target="new"><img src="Image/facebook.png" alt="facebook" /></a>
+                <a href="http://www.twitter.com" target="new"><img src="Image/Twitter.png" alt="twitter" /></a>
+                <a href="http://www.youtube.com" target="new"><img src="Image/youtube.png" alt="youtube" /></a>
+                <a href="http://www.newsfeeds.com" target="new"><img src="Image/newsfeeds.png" alt="newsfeed" /></a>
+		</div>
+</address>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+﻿body {
+}
+
+h2 
+{
+    text-indent: 22px;
+    font-family: Arial Black;
+    font-size: 1.3em;
+    color: #D00000;
+}
+
+section ul 
+{
+    font-family: Arial Black;
+    
+}
+
+section ul li
+{
+    font-family: Arial;
+    font-size: 1.1em;
+    
+}
+
+section li a 
+{
+    font-size: 1.1em;
+    color: #FF0000;
+}
+
+    
+/* Section styles */ 
+section 
+{
+    text-align: left;
+    margin-top: -430px;
+    margin-left: 230px;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: #B00101;
+    width: 750px;
+        
+}
+
+/* Navigation Styles */    
+#bottomnav
+{
+    text-align: center;
+}
+
+footer 
+{
+    margin-left: 25px;
+}
+
+#hotlines
+{
+   margin-top: -38px;
+}
+
+#qns1, #qns2, #qns3, #qns4
+{
+    font-family: Arial;
+    background: #FF4C00;
+    color: white;
+    padding: 5px;
+    width: 630px;
+    border-radius: 10px;
+    text-indent: 10px;
+    text-align: center;
+}
+
+article#FAQ ul 
+{
+    list-style-type: none;
+}

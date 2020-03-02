@@ -1,0 +1,64 @@
+﻿section 
+{
+    text-align:left;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: #B00101;
+    padding: 2px;
+    margin-left: 200px;
+    margin-top:-245px;
+}
+
+nav#bottomnav
+{
+    text-align:center;
+}
+
+#fd
+{
+    margin-left: -30px;
+}
+
+th#fixed
+{
+    text-align: left;
+    float: left;
+    font-size: 20px;
+    font-family: Arial Black;
+}
+
+
+tr
+{
+    width: 300px;
+}
+tr th
+{
+padding: 20px;
+}
+#savings
+{
+    margin-left: 100px;
+}
+th#save
+{
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial Black;
+}
+
+
+
+#current 
+{
+    margin-left: -50px;
+}
+
+th#cur
+{
+    text-align: left;
+    float: left;
+    font-size: 20px;
+    font-family: Arial Black;
+}

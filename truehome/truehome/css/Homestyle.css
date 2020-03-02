@@ -1,0 +1,137 @@
+﻿/*
+    INTERNET BANKING PROJECT
+
+    Bank name           : TRUE Bank
+    Date Created        :  2013
+    Created By          : Lee Rui Peng
+
+    Filename            : Homestyle.css
+    Supporting files    : Home.htm
+*/
+body
+{
+    font-family:Arial;
+}
+/* Tab Styles */
+.dates
+{
+    color: #D00000;
+    font-size: 18px;
+}
+
+#tab1
+{
+    font-size: 17px;
+    color: black;
+}
+
+#tab1 a
+{
+    text-decoration: none;
+    color: Black;
+}
+
+#tab1 a:hover
+{
+    color: #FF0000;
+    border-bottom: dotted;
+    border-bottom-width: 1px;
+}
+
+/* Table Products */
+.tableproducts
+{
+    color: #FF4C00;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#tableproducts tr
+{
+    height: 160px;
+}
+
+#tableproducts
+{
+    margin-top: 25px;
+    font-family: Arial;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 7px;
+    border-color: #B00101;
+    display: inline-table;
+}
+
+#tableproducts a
+{
+    color: Black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#tableproducts a:hover
+{
+    color: #FF0000;
+    border-bottom: dotted;
+    border-bottom-width: 1px;
+}
+
+/* RH box Styles */
+.box
+{
+    float: right;
+    font-family: Arial;
+    margin-top: -335px;
+    width: 223px;
+}
+
+#Bproducts
+{
+    font-size: 18px;
+    font-family: Arial Black;
+    color: white;
+}
+
+#products
+{
+    background-color: #FF9640;
+    border-radius: 20px;
+}
+
+#contact
+{
+    background-color: #FF9640;
+    border-radius: 20px;
+}
+
+#social
+{
+    background-color: #FF9640;
+    border-radius: 20px;
+}
+
+#social a
+{
+    color: Black;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#social a:hover
+{
+    color: #FF0000;
+    border-bottom: dotted;
+    border-bottom-width: 1px;
+}
+
+#socialM
+{
+    font-size: 18px;
+    font-family: Arial Black;
+    color: white;
+}
+
+footer
+{
+    margin-top: 20px;
+}
