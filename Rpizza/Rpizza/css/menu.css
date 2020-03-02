@@ -1,0 +1,36 @@
+﻿#right
+{
+    margin-top: -850px;
+    margin-right: 20px;
+    float: right;
+}
+
+table
+{
+    margin-left: -15px;
+}
+
+.titles
+{
+    text-decoration: none;
+    margin-left: 0px;
+    margin-bottom: -100px;
+    margin-top: 120px;
+    font-size: 30px;
+    font-family: Algerian;
+    font-weight: 900;
+    color: white;
+    
+}
+
+#costs
+{
+    background-color: black;
+    background-image: url(../images/firebackground.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    color: White; 
+    border: 5px solid white;
+    border-radius: 20px;
+    text-align: center;
+}

@@ -1,0 +1,68 @@
+﻿/* Tab Content - menucool.com */
+ul.tabs
+{
+    padding: 6px 0;
+    font-size: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center; /*set to left, center, or right to align the tabs as desired*/
+}
+        
+ul.tabs li
+{
+    display: inline;
+    margin-right: 5px; /*distance between tabs*/
+}
+        
+ul.tabs li a
+{
+    font-size: 20px;
+    font-family: Arial Black;
+    text-decoration: none;
+    position: relative;
+    padding: 6px 16px;
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    border-bottom: 5px solid #FF3500;
+    color: #A60000;
+    background: black url(tab.png) repeat-x 0 0;
+    border-radius: 20px 20px 0px 0px;
+    outline: none;
+}
+        
+ul.tabs li a:hover
+{
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    border-bottom: 5px solid #FF3500;
+    background: #FF3500 url(tab.png) 0 -36px repeat-x;
+}
+        
+ul.tabs li.selected a, ul.tabs li.selected a:hover
+{
+    padding: 9px 16px 6px;
+    position: relative;
+    top: 0px;
+    font-weight:bold;
+    background: #FF3500 url(tabbg.gif) 0 -72px repeat-x;
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    border-bottom: 5px solid #FF3500;
+}
+        
+        
+ul.tabs li.selected a:hover
+{
+    text-decoration: none;
+}
+
+div.tabcontents
+{
+    border: 5px solid white;
+    padding: 30px;
+    background-color: #FF3500;
+    border-radius: 20px;
+}

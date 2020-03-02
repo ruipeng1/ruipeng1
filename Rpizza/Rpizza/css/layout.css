@@ -1,0 +1,121 @@
+﻿body
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    background-image: url(../images/background.png);
+}
+
+/* Site Styles */
+#sitelinks ul
+{
+    list-style-type: none;
+    margin-left: 300px;
+}
+
+#sitelinks li
+{   
+    display: inline;
+    color: white;
+    margin-left: 15px;
+
+}
+
+#sitelinks li a
+{
+    text-decoration: none;
+}
+
+/* Section Styles */
+section
+{
+    border-style: solid;
+    border-radius: 20px;
+    /*background-image: url(../images/pizza-oven.png);*/
+    background-color: Black;
+}
+
+#leftmenu
+{
+    width: 300px;
+    background-image: url(../images/leftmenu_history.png);
+    border-radius: 20px;
+
+}
+
+#leftnav ul
+{
+    list-style-type: none;
+}
+
+#leftnav ul li
+{
+    width: 190px;
+    margin: 0px 0px 10px 0px; 
+    border-style: hidden;   
+    border-bottom: 3px dashed #FF0000;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    background-color: black;
+}
+
+#leftnav ul li a
+{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Algerian;
+    font-weight: 900;
+  
+}
+
+#leftnav ul li a:hover
+{
+    color: #FF0000;
+}
+
+.selected
+{
+    color: #FF0000;
+}
+
+.unselected
+{
+    color: White;
+}
+    
+#hours
+{
+    margin-left: 12px;
+    margin-top: 50px;
+    border-bottom: 1px solid black;
+}
+
+#Returntop
+{
+    margin-top: 2px;
+    margin-left: 5px;
+    float: right;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Algerian;
+}
+
+#Returntop a
+{
+    text-decoration: none;
+    color: white;
+}
+
+#Returntop a:hover
+{
+    color: #FF0000;
+}   
+
+#foot, #foot a
+{
+    font-family: arial;
+    font-size: 15px;
+    float: right;
+    color: White;
+
+}

@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Rpizza-Feedback form</title>
+    <link href="css/layout.css" type="text/css" rel="Stylesheet" />
+    <link href="css/feedback.css" type="text/css" rel="Stylesheet" />
+    <link rel="shortcut icon" href="images/rpizza.png" />
+</head>
+<body id="top">
+    <nav id="sitelinks">
+        <ul>
+            <li>
+                 <a href="contact.htm" class="unselected">Contact Us</a> | <a href="about.htm" class="unselected">About Us</a>
+            </li>
+            <li>
+                <a href="http://www.facebook.com" target="new"><img src="images/fb.png" /></a>
+            </li>
+            <li>
+                <a href="http://www.twitter.com" target="new"><img src="images/twitter.png" /></a>
+            </li>
+            <li>
+                <a href="http://www.instagram.com" target="new"><img src="images/instagram.png" /></a>
+            </li>
+        </ul>
+    </nav>
+
+<section>    
+<div id="leftmenu">
+    <div id="rpizza">
+        <img src="images/rpizza.png" width="300px" height="200px"/>
+    </div>
+    <nav id="leftnav">
+        <ul>
+            <li>
+                <a href="home.htm" class="unselected">Rpizza</a>
+            </li>
+            <li>
+                <a href="menu.htm" class="unselected">MENU</a>
+            </li>
+            <li>
+                <a href="about.htm" class="unselected">About us</a>
+            </li>
+            <li>
+                <a href="feedback.htm" class="selected">FeedBack</a>
+            </li>
+        </ul> 
+    </nav>
+    <div id="hours">
+        <a href="contact.htm"><img src="images/hours.png" /></a>
+    </div>
+</div>
+<div id="right">
+(*) Complusory Fields
+<form action="progress.htm" method="get" onsubmit="javascript:alert('Thank you for your feedback!')">
+
+    <fieldset id="custInfo">
+<table>  
+                <legend>Customer Information</legend>
+                <tr>
+                    <td>
+                        <label for="custname">Name * :</label>
+                    </td>
+                    <td>
+                        <input name="custname" id="custname" placeholder="First and Last name" 
+                        pattern="[a-zA-Z ]+" required="required" size="30"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Address :</label>
+                    </td>
+                    <td>
+                        <input name="address" id="address" size="30"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Handphone/Home number :</label>
+                    </td>
+                    <td>
+                        <input name="Phone" id="phone" type="text" placeholder="Enter an 8 digit number" 
+                        pattern="^\(?([0-9]{10})$" size="30"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">E-mail * :</label>
+                    </td>
+                    <td>
+                        <input name="email" id="email" type="email" placeholder="Example : mymail@rpizza.com.sg" 
+                        required="required" size="30"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Where did you hear about us?
+                        <br />
+                        (select all that apply)</label>
+                    </td>
+                    <td>
+                        <select name="infoSrc" id="inoSrc" size="3" multiple="multiple">
+                            <option value="internet">Internet</option>
+                            <option value="news">Newspaper</option>
+                            <option value="mouth">Word of Mouth</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ordersPerMonth">How many times do you dine in RPizza per month?</label>
+                    </td>
+                    <td>
+                        <input name="ordersPerMonth" id="ordersPerMonth" type="number" value="1" min="0" max="10" step="1" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="favDish">What's your favourite dish ?</label>
+                    </td>
+                    <td>
+                        <input name="favDish" id="favDish" list="dishType" size="30"/>
+                        <datalist id="dishType">                                        
+                            <option value="SPICY CHICKEN w HAM Pizza" />
+                            <option value="SEAFOOD Pizza" />
+                            <option value="BBQ CHICKEN Pizza" />
+                            <option value="BBQ BEEF Pizza" />
+                            <option value="PEPPERONI Pizza" />
+                            <option value="HAWAIIAN Pizza" />
+                            <option value="CURRY CHICKEN Pizza" />
+                            <option value="TRIO CHEESE Pizza" />
+                            <option value="VEGGIE w CHILLY Pizza" />
+                        </datalist>
+                    </td>
+                </tr>
+</table>
+            </fieldset>
+            <fieldset id="experience">
+<table>
+                <legend>Experience at RPizza</legend>
+                <tr>
+                    <td>
+                        <label for="visitdate">Date of visit :</label>
+                    </td>
+                    <td>
+                        <input name="visitdate" id="visitdate" type="date" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="receipt">Receipt number * :</label>
+                    </td>
+                    <td>
+                        <input name="receipt" id="receipt" placeholder="re-nnnnnn" required="required" pattern="^re\-\d{6}" size="30"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ordertype">Order Type :</label>
+                    </td>
+                    <td>
+                        <select name="ordertype" id="ordertype" >
+                            <option value="type1">Delivery</option>
+                            <option value="type2" selected="selected">Dine in</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Rate the pricing<br />
+                               (0 = expensive; 10 = just nice)
+                        </label>
+                    </td>
+                    <td>
+                        <label class = "slider">0</label>
+                        <input name="pricing" id="pricing" type="range" value="5" min="0" max="10" step="1"/>
+                        <label class= "slider">10</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Rate the food quality<br />
+                               (0 = poor; 10 = great)
+                        </label>
+                    </td>
+                    <td>
+                        <label class = "slider">0</label>
+                        <input name="quality" id="quality" type="range" value="5" min="0" max="10" step="1"/>
+                        <label class="slider">10</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Rate the overall service<br />
+                               (0 = poor; 10 = great) 
+                        </label>
+                    </td>
+                    <td>
+                        <label class = "slider">0</label>
+                        <input name="service" id="service" type="range" value="5" min="0" max="10" step="1"/>
+                        <label class= "slider">10</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="comments" class="comments">Tell us more about your experience!
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    </td>
+                    <td>
+                        <textarea name="comments" class="comments"></textarea>
+                    </td>
+                </tr>                               
+</table>           
+        </fieldset>
+                                   
+            <label id="newsletter">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="newscb" />
+            E-mail me your newsletter for great coupons and specials!
+           </label>
+           <br />
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <input type="submit" value="Submit My FeedBack" />
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <input type="reset" value="Cancel" />
+
+</form>
+</div>
+
+</section>
+</body>
+
+<footer>
+    <div id="Returntop"><a href="#top">Return to Top &#8657;</a></div>
+    <div id="foot">
+    &copy; Copyright 2013 Rpizza Singapore | All Rights Reserved<br />
+            All promotions in this website are for Rpizza Singapore only
+    </div>
+</footer>
+</html>

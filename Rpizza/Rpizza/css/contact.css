@@ -1,0 +1,67 @@
+﻿/* Section Styles */
+section
+{
+    height: 737px;
+}
+
+#right
+{
+    margin-top: -730px;
+    margin-left: 300px;
+}
+
+.titles
+{
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 30px;
+    font-family: Algerian;
+    font-weight: 900;
+    color: white;
+    
+}
+
+.contactus
+{
+    margin-left: 10px;
+    font-family: Arial;
+    color: White;
+}
+
+.contactus a
+{
+    text-decoration: none;
+    font-family: Arial Black;
+    color: #FF3500;
+}
+
+table
+{
+    border: 5px solid white;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: #FF3500;
+    width: 675px;
+}
+
+td
+{
+    color: White;
+}
+
+th
+{
+    font-family: Arial Black;
+    font-size: 17px;
+    color: #A60000 ;
+}
+
+tbody
+{
+    font-family: Arial;
+}
+
+table tr td
+{
+    width: 500px;
+}
